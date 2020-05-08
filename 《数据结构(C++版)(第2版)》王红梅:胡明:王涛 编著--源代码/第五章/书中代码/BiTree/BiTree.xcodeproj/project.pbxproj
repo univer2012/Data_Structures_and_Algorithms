@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		67CD939D1BC365E800284320 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67CD939C1BC365E800284320 /* main.cpp */; };
 		67CD93A51BC365FC00284320 /* BiTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67CD93A31BC365FC00284320 /* BiTree.cpp */; };
+		8F8FC5C0246454C00017AE10 /* node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F8FC5BF246454C00017AE10 /* node.cpp */; };
+		8F8FC5C42464572D0017AE10 /* tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F8FC5C32464572D0017AE10 /* tree.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,10 @@
 		67CD939C1BC365E800284320 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		67CD93A31BC365FC00284320 /* BiTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BiTree.cpp; sourceTree = "<group>"; };
 		67CD93A41BC365FC00284320 /* BiTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BiTree.h; sourceTree = "<group>"; };
+		8F8FC5BF246454C00017AE10 /* node.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = node.cpp; sourceTree = "<group>"; };
+		8F8FC5C1246454DE0017AE10 /* node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = node.h; sourceTree = "<group>"; };
+		8F8FC5C2246457110017AE10 /* tree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tree.h; sourceTree = "<group>"; };
+		8F8FC5C32464572D0017AE10 /* tree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tree.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				67CD939C1BC365E800284320 /* main.cpp */,
-				67CD93A31BC365FC00284320 /* BiTree.cpp */,
 				67CD93A41BC365FC00284320 /* BiTree.h */,
+				67CD93A31BC365FC00284320 /* BiTree.cpp */,
+				8F8FC5C1246454DE0017AE10 /* node.h */,
+				8F8FC5BF246454C00017AE10 /* node.cpp */,
+				8F8FC5C2246457110017AE10 /* tree.h */,
+				8F8FC5C32464572D0017AE10 /* tree.cpp */,
 			);
 			path = BiTree;
 			sourceTree = "<group>";
@@ -106,6 +116,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 67CD93901BC365E800284320;
@@ -124,7 +135,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				67CD93A51BC365FC00284320 /* BiTree.cpp in Sources */,
+				8F8FC5C42464572D0017AE10 /* tree.cpp in Sources */,
 				67CD939D1BC365E800284320 /* main.cpp in Sources */,
+				8F8FC5C0246454C00017AE10 /* node.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +254,7 @@
 				67CD93A21BC365E800284320 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

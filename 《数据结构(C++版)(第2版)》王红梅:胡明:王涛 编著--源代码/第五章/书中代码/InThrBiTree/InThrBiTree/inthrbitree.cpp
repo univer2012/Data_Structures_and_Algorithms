@@ -11,13 +11,8 @@
 #include<string>
 #include"inthrbitree.h"
 using namespace std;
-/*
- *前置条件：中序线索二叉树不存在
- *输    入：无
- *功    能：构造一棵中序线索二叉树
- *输    出：无
- *后置条件：产生一棵中序线索二叉树
- */
+
+///构造一棵中序线索二叉树
 template <class T>
 InThrBiTree<T>::InThrBiTree( )
 {
@@ -25,37 +20,22 @@ InThrBiTree<T>::InThrBiTree( )
     this->root = Creat( );
     ThrBiTree(root,pre);
 }
-/*
- *前置条件：中序线索二叉树已存在
- *输    入：无
- *功    能：释放中序线索二叉链表中各结点的存储空间
- *输    出：无
- *后置条件：中序线索二叉树不存在
- */
+
+///释放中序线索二叉链表中各结点的存储空间
 template <class T>
 InThrBiTree<T>::~InThrBiTree(void)
 {
     Release(root);
 }
-/*
- *前置条件：中序线索二叉树已经存在
- *输    入：无
- *功    能：获取指向中序线索二叉树根结点的指针
- *输    出：指向中序线索二叉树根结点的指针
- *后置条件：中序线索二叉树不变
- */
+
+///获取指向中序线索二叉树根结点的指针
 template <class T>
 ThrNode<T>* InThrBiTree<T>::Getroot( )
 {
     return root;
 }
-/*
- *前置条件: 中序线索二叉树已经存在
- *输    入: 无
- *功    能: 查找结点p的后继结点
- *输    出：输出指向结点p的后继结点的指针
- *后置条件：中序线索二叉树不变
- */
+
+///查找结点p的后继结点
 template <class T>
 ThrNode<T>* InThrBiTree<T>::Next(ThrNode<T>* p)
 {
@@ -71,13 +51,7 @@ ThrNode<T>* InThrBiTree<T>::Next(ThrNode<T>* p)
     return q;
 }
 
-/*
- *前置条件：中序线索二叉树已经存在
- *输    入：无
- *功    能：中序遍历一棵线索二叉树
- *输    出：线索二叉树结点数据的一个线性排序
- *后置条件：中序线索二叉树不变
- */
+///中序遍历一棵线索二叉树
 template <class T>
 void InThrBiTree<T>::InOrder(ThrNode<T> *root)
 {
@@ -95,13 +69,8 @@ void InThrBiTree<T>::InOrder(ThrNode<T> *root)
     }
     cout<<endl;
 }
-/*
- *前置条件：二叉树不存在
- *输    入：结点的数据值
- *功    能：构造一棵二叉树,构造函数调用
- *输    出：指向根结点的指针
- *后置条件：产生一棵二叉树
- */
+
+///构造一棵二叉树,构造函数调用
 template <class T>
 ThrNode<T>* InThrBiTree<T>::Creat( )
 {
@@ -120,13 +89,8 @@ ThrNode<T>* InThrBiTree<T>::Creat( )
     }
     return root;
 }
-/*
- *前置条件：二叉树已经存在
- *输    入：无
- *功    能：给二叉树建立线索
- *输    出：无
- *后置条件：产生一棵中序线索二叉树
- */
+
+///给二叉树建立线索
 template <class T>
 void InThrBiTree<T>::ThrBiTree(ThrNode<T> *root,ThrNode<T> *pre)
 {
@@ -143,13 +107,8 @@ void InThrBiTree<T>::ThrBiTree(ThrNode<T> *root,ThrNode<T> *pre)
     pre = root;
     ThrBiTree(root->rchild,pre);
 }
-/*
- *前置条件：中序线索二叉树已经存在
- *输    入：无
- *功    能：释放中序线索二叉树的存储空间，析构函数调用
- *输    出：无
- *后置条件：中序线索二叉树不存在
- */
+
+///释放中序线索二叉树的存储空间，析构函数调用
 template<class T>
 void InThrBiTree<T>::Release(ThrNode<T>* root)
 {

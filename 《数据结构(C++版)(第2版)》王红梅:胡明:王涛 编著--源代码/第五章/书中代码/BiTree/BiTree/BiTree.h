@@ -13,8 +13,7 @@
 
 //二叉树的结点结构
 template <class T>
-struct BiNode
-{
+struct BiNode {
     T data;
     BiNode<T> *lchild, *rchild;
 };

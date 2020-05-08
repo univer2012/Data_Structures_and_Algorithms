@@ -64,10 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				67CD93B21BC3676100284320 /* main.cpp */,
-				67CD93B91BC3677100284320 /* inthrbitree.cpp */,
 				67CD93BA1BC3677100284320 /* inthrbitree.h */,
-				675B1F381BC3FE5D003ACE0B /* inthrbitree_book.cpp */,
+				67CD93B91BC3677100284320 /* inthrbitree.cpp */,
 				675B1F391BC3FE5D003ACE0B /* inthrbitree_book.h */,
+				675B1F381BC3FE5D003ACE0B /* inthrbitree_book.cpp */,
 			);
 			path = InThrBiTree;
 			sourceTree = "<group>";
@@ -111,6 +111,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 67CD93A61BC3676100284320;

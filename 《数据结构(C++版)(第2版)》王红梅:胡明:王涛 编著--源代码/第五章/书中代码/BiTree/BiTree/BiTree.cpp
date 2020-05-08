@@ -9,7 +9,7 @@
 #include<iostream>
 #include<string>
 
-#include"bitree.h"
+#include "BiTree.h"
 
 using namespace std;
 
@@ -34,7 +34,7 @@ BiNode<T>* BiTree<T>::Getroot( )
     return root;
 }
 
-///前序遍历二叉树
+///二叉树前序遍历递归算法PreOrder
 template<class T>
 void BiTree<T>::PreOrder(BiNode<T> *root)
 {
@@ -46,7 +46,7 @@ void BiTree<T>::PreOrder(BiNode<T> *root)
     }
 }
 
-///中序遍历二叉树
+///二叉树中序遍历递归算法InOrder
 template <class T>
 void BiTree<T>::InOrder (BiNode<T> *root)
 {
@@ -58,7 +58,7 @@ void BiTree<T>::InOrder (BiNode<T> *root)
     }
 }
 
-///后序遍历二叉树
+///二叉树后序遍历递归算法PostOrder
 template <class T>
 void BiTree<T>::PostOrder(BiNode<T> *root)
 {
@@ -70,7 +70,7 @@ void BiTree<T>::PostOrder(BiNode<T> *root)
     }
 }
 
-///层序遍历二叉树
+///二叉树层序遍历算法LeverOrder
 template <class T>
 void BiTree<T>::LeverOrder(BiNode<T> *root)
 {
@@ -96,6 +96,7 @@ void BiTree<T>::LeverOrder(BiNode<T> *root)
 }
 
 ///初始化一棵二叉树,构造函数调用
+///建立二叉链表算法Creat
 template <class T>
 BiNode<T>* BiTree<T>::Creat( )
 {
@@ -112,6 +113,7 @@ BiNode<T>* BiTree<T>::Creat( )
     }
     return root;
 }
+
 
 ///释放二叉树的存储空间，析构函数调用
 template<class T>
