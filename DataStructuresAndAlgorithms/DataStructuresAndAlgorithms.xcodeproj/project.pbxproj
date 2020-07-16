@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11DE63D66125784A1F0EB226 /* Pods_DataStructuresAndAlgorithms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF92991193FBBA89699C382E /* Pods_DataStructuresAndAlgorithms.framework */; };
+		32FB37BA24C02DC1009BB23E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FB37B924C02DC1009BB23E /* AppDelegate.m */; };
+		32FB37C324C02DC1009BB23E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32FB37C124C02DC1009BB23E /* Main.storyboard */; };
+		32FB37C524C02DC3009BB23E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32FB37C424C02DC3009BB23E /* Assets.xcassets */; };
+		32FB37C824C02DC3009BB23E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32FB37C624C02DC3009BB23E /* LaunchScreen.storyboard */; };
+		32FB37CB24C02DC3009BB23E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FB37CA24C02DC3009BB23E /* main.m */; };
+		32FB37D424C02E3A009BB23E /* SGHTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FB37D324C02E3A009BB23E /* SGHTabBarViewController.m */; };
+		32FB37DA24C02EEE009BB23E /* SGHBookmarksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FB37D924C02EEE009BB23E /* SGHBookmarksViewController.m */; };
+		32FB37E024C02F4A009BB23E /* UIViewController+ExecuteMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FB37DC24C02F4A009BB23E /* UIViewController+ExecuteMethod.m */; };
+		32FB37E124C02F4A009BB23E /* SHBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FB37DD24C02F4A009BB23E /* SHBaseTableViewController.m */; };
+		32FB37E424C02F81009BB23E /* SGHCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FB37E324C02F81009BB23E /* SGHCellModel.m */; };
+		32FB37E724C02FB8009BB23E /* SGHContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FB37E624C02FB8009BB23E /* SGHContactsViewController.m */; };
+		32FB37EB24C03243009BB23E /* SGHChapter2ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 32FB37EA24C03243009BB23E /* SGHChapter2ViewController.mm */; };
+		32FB37EF24C036AA009BB23E /* SGHCallCppClassViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 32FB37EE24C036AA009BB23E /* SGHCallCppClassViewController.mm */; };
+		32FB37F324C036E6009BB23E /* SGHTextCppClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32FB37F124C036E6009BB23E /* SGHTextCppClass.cpp */; };
+		32FB37F824C03842009BB23E /* SGHLinkList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32FB37F624C03842009BB23E /* SGHLinkList.cpp */; };
+		32FB38C824C04CB8009BB23E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 32FB38C724C04CB8009BB23E /* libc++.tbd */; };
+		32FB38CA24C04CF9009BB23E /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 32FB38C924C04CF9009BB23E /* libc++abi.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		32FB37B524C02DC0009BB23E /* DataStructuresAndAlgorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataStructuresAndAlgorithms.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32FB37B824C02DC0009BB23E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		32FB37B924C02DC1009BB23E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		32FB37C224C02DC1009BB23E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		32FB37C424C02DC3009BB23E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32FB37C724C02DC3009BB23E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		32FB37C924C02DC3009BB23E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32FB37CA24C02DC3009BB23E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32FB37D224C02E3A009BB23E /* SGHTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHTabBarViewController.h; sourceTree = "<group>"; };
+		32FB37D324C02E3A009BB23E /* SGHTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHTabBarViewController.m; sourceTree = "<group>"; };
+		32FB37D824C02EEE009BB23E /* SGHBookmarksViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHBookmarksViewController.h; sourceTree = "<group>"; };
+		32FB37D924C02EEE009BB23E /* SGHBookmarksViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHBookmarksViewController.m; sourceTree = "<group>"; };
+		32FB37DC24C02F4A009BB23E /* UIViewController+ExecuteMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ExecuteMethod.m"; sourceTree = "<group>"; };
+		32FB37DD24C02F4A009BB23E /* SHBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHBaseTableViewController.m; sourceTree = "<group>"; };
+		32FB37DE24C02F4A009BB23E /* SHBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHBaseTableViewController.h; sourceTree = "<group>"; };
+		32FB37DF24C02F4A009BB23E /* UIViewController+ExecuteMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ExecuteMethod.h"; sourceTree = "<group>"; };
+		32FB37E224C02F81009BB23E /* SGHCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHCellModel.h; sourceTree = "<group>"; };
+		32FB37E324C02F81009BB23E /* SGHCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGHCellModel.m; sourceTree = "<group>"; };
+		32FB37E524C02FB8009BB23E /* SGHContactsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHContactsViewController.h; sourceTree = "<group>"; };
+		32FB37E624C02FB8009BB23E /* SGHContactsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHContactsViewController.m; sourceTree = "<group>"; };
+		32FB37E924C03243009BB23E /* SGHChapter2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHChapter2ViewController.h; sourceTree = "<group>"; };
+		32FB37EA24C03243009BB23E /* SGHChapter2ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SGHChapter2ViewController.mm; sourceTree = "<group>"; };
+		32FB37EC24C03548009BB23E /* DataStructuresAndAlgorithms.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataStructuresAndAlgorithms.pch; sourceTree = "<group>"; };
+		32FB37ED24C036AA009BB23E /* SGHCallCppClassViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHCallCppClassViewController.h; sourceTree = "<group>"; };
+		32FB37EE24C036AA009BB23E /* SGHCallCppClassViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SGHCallCppClassViewController.mm; sourceTree = "<group>"; };
+		32FB37F124C036E6009BB23E /* SGHTextCppClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SGHTextCppClass.cpp; sourceTree = "<group>"; };
+		32FB37F224C036E6009BB23E /* SGHTextCppClass.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SGHTextCppClass.hpp; sourceTree = "<group>"; };
+		32FB37F624C03842009BB23E /* SGHLinkList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SGHLinkList.cpp; sourceTree = "<group>"; };
+		32FB37F724C03842009BB23E /* SGHLinkList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SGHLinkList.hpp; sourceTree = "<group>"; };
+		32FB38C724C04CB8009BB23E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		32FB38C924C04CF9009BB23E /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
+		7913E0EEC34FDB1F861A341E /* Pods-DataStructuresAndAlgorithms.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructuresAndAlgorithms.release.xcconfig"; path = "Target Support Files/Pods-DataStructuresAndAlgorithms/Pods-DataStructuresAndAlgorithms.release.xcconfig"; sourceTree = "<group>"; };
+		AF92991193FBBA89699C382E /* Pods_DataStructuresAndAlgorithms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataStructuresAndAlgorithms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E059481AD3B41273637ED9F4 /* Pods-DataStructuresAndAlgorithms.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructuresAndAlgorithms.debug.xcconfig"; path = "Target Support Files/Pods-DataStructuresAndAlgorithms/Pods-DataStructuresAndAlgorithms.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32FB37B224C02DC0009BB23E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32FB38CA24C04CF9009BB23E /* libc++abi.tbd in Frameworks */,
+				32FB38C824C04CB8009BB23E /* libc++.tbd in Frameworks */,
+				11DE63D66125784A1F0EB226 /* Pods_DataStructuresAndAlgorithms.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32FB37AC24C02DC0009BB23E = {
+			isa = PBXGroup;
+			children = (
+				32FB37B724C02DC0009BB23E /* DataStructuresAndAlgorithms */,
+				32FB37B624C02DC0009BB23E /* Products */,
+				7EBB9D663B39FCB8209BD3C0 /* Pods */,
+				B558CD168017B24971A9A49D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		32FB37B624C02DC0009BB23E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32FB37B524C02DC0009BB23E /* DataStructuresAndAlgorithms.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32FB37B724C02DC0009BB23E /* DataStructuresAndAlgorithms */ = {
+			isa = PBXGroup;
+			children = (
+				32FB37B824C02DC0009BB23E /* AppDelegate.h */,
+				32FB37B924C02DC1009BB23E /* AppDelegate.m */,
+				32FB37D524C02EA8009BB23E /* Modules */,
+				32FB37D124C02E1B009BB23E /* Tabbar */,
+				32FB37DB24C02F23009BB23E /* Base */,
+				32FB37C124C02DC1009BB23E /* Main.storyboard */,
+				32FB37C424C02DC3009BB23E /* Assets.xcassets */,
+				32FB37C624C02DC3009BB23E /* LaunchScreen.storyboard */,
+				32FB37C924C02DC3009BB23E /* Info.plist */,
+				32FB37EC24C03548009BB23E /* DataStructuresAndAlgorithms.pch */,
+				32FB37CA24C02DC3009BB23E /* main.m */,
+			);
+			path = DataStructuresAndAlgorithms;
+			sourceTree = "<group>";
+		};
+		32FB37D124C02E1B009BB23E /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				32FB37D224C02E3A009BB23E /* SGHTabBarViewController.h */,
+				32FB37D324C02E3A009BB23E /* SGHTabBarViewController.m */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		32FB37D524C02EA8009BB23E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				32FB37D724C02EBD009BB23E /* Contacts */,
+				32FB37D624C02EB5009BB23E /* Bookmarks */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		32FB37D624C02EB5009BB23E /* Bookmarks */ = {
+			isa = PBXGroup;
+			children = (
+				32FB37D824C02EEE009BB23E /* SGHBookmarksViewController.h */,
+				32FB37D924C02EEE009BB23E /* SGHBookmarksViewController.m */,
+				32FB37E824C031FC009BB23E /* Modules */,
+			);
+			path = Bookmarks;
+			sourceTree = "<group>";
+		};
+		32FB37D724C02EBD009BB23E /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				32FB37E524C02FB8009BB23E /* SGHContactsViewController.h */,
+				32FB37E624C02FB8009BB23E /* SGHContactsViewController.m */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		32FB37DB24C02F23009BB23E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				32FB37DE24C02F4A009BB23E /* SHBaseTableViewController.h */,
+				32FB37DD24C02F4A009BB23E /* SHBaseTableViewController.m */,
+				32FB37E224C02F81009BB23E /* SGHCellModel.h */,
+				32FB37E324C02F81009BB23E /* SGHCellModel.m */,
+				32FB37DF24C02F4A009BB23E /* UIViewController+ExecuteMethod.h */,
+				32FB37DC24C02F4A009BB23E /* UIViewController+ExecuteMethod.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		32FB37E824C031FC009BB23E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				32FB37F424C03771009BB23E /* Chapter2 */,
+				32FB37F024C036C1009BB23E /* CallCppClass */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		32FB37F024C036C1009BB23E /* CallCppClass */ = {
+			isa = PBXGroup;
+			children = (
+				32FB37F124C036E6009BB23E /* SGHTextCppClass.cpp */,
+				32FB37F224C036E6009BB23E /* SGHTextCppClass.hpp */,
+				32FB37ED24C036AA009BB23E /* SGHCallCppClassViewController.h */,
+				32FB37EE24C036AA009BB23E /* SGHCallCppClassViewController.mm */,
+			);
+			path = CallCppClass;
+			sourceTree = "<group>";
+		};
+		32FB37F424C03771009BB23E /* Chapter2 */ = {
+			isa = PBXGroup;
+			children = (
+				32FB37F524C0377A009BB23E /* 1Linklist */,
+				32FB37E924C03243009BB23E /* SGHChapter2ViewController.h */,
+				32FB37EA24C03243009BB23E /* SGHChapter2ViewController.mm */,
+			);
+			path = Chapter2;
+			sourceTree = "<group>";
+		};
+		32FB37F524C0377A009BB23E /* 1Linklist */ = {
+			isa = PBXGroup;
+			children = (
+				32FB37F624C03842009BB23E /* SGHLinkList.cpp */,
+				32FB37F724C03842009BB23E /* SGHLinkList.hpp */,
+			);
+			path = 1Linklist;
+			sourceTree = "<group>";
+		};
+		7EBB9D663B39FCB8209BD3C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E059481AD3B41273637ED9F4 /* Pods-DataStructuresAndAlgorithms.debug.xcconfig */,
+				7913E0EEC34FDB1F861A341E /* Pods-DataStructuresAndAlgorithms.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B558CD168017B24971A9A49D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32FB38C924C04CF9009BB23E /* libc++abi.tbd */,
+				32FB38C724C04CB8009BB23E /* libc++.tbd */,
+				AF92991193FBBA89699C382E /* Pods_DataStructuresAndAlgorithms.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32FB37B424C02DC0009BB23E /* DataStructuresAndAlgorithms */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32FB37CE24C02DC3009BB23E /* Build configuration list for PBXNativeTarget "DataStructuresAndAlgorithms" */;
+			buildPhases = (
+				962655E68BB49E5203F035FF /* [CP] Check Pods Manifest.lock */,
+				32FB37B124C02DC0009BB23E /* Sources */,
+				32FB37B224C02DC0009BB23E /* Frameworks */,
+				32FB37B324C02DC0009BB23E /* Resources */,
+				6D440B6AEBDFC515D4361E6F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DataStructuresAndAlgorithms;
+			productName = DataStructuresAndAlgorithms;
+			productReference = 32FB37B524C02DC0009BB23E /* DataStructuresAndAlgorithms.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32FB37AD24C02DC0009BB23E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SGH;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = blue;
+				TargetAttributes = {
+					32FB37B424C02DC0009BB23E = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 32FB37B024C02DC0009BB23E /* Build configuration list for PBXProject "DataStructuresAndAlgorithms" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32FB37AC24C02DC0009BB23E;
+			productRefGroup = 32FB37B624C02DC0009BB23E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32FB37B424C02DC0009BB23E /* DataStructuresAndAlgorithms */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32FB37B324C02DC0009BB23E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32FB37C824C02DC3009BB23E /* LaunchScreen.storyboard in Resources */,
+				32FB37C524C02DC3009BB23E /* Assets.xcassets in Resources */,
+				32FB37C324C02DC1009BB23E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D440B6AEBDFC515D4361E6F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DataStructuresAndAlgorithms/Pods-DataStructuresAndAlgorithms-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DataStructuresAndAlgorithms/Pods-DataStructuresAndAlgorithms-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DataStructuresAndAlgorithms/Pods-DataStructuresAndAlgorithms-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		962655E68BB49E5203F035FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DataStructuresAndAlgorithms-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32FB37B124C02DC0009BB23E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32FB37F824C03842009BB23E /* SGHLinkList.cpp in Sources */,
+				32FB37DA24C02EEE009BB23E /* SGHBookmarksViewController.m in Sources */,
+				32FB37EB24C03243009BB23E /* SGHChapter2ViewController.mm in Sources */,
+				32FB37E724C02FB8009BB23E /* SGHContactsViewController.m in Sources */,
+				32FB37BA24C02DC1009BB23E /* AppDelegate.m in Sources */,
+				32FB37E424C02F81009BB23E /* SGHCellModel.m in Sources */,
+				32FB37E124C02F4A009BB23E /* SHBaseTableViewController.m in Sources */,
+				32FB37D424C02E3A009BB23E /* SGHTabBarViewController.m in Sources */,
+				32FB37CB24C02DC3009BB23E /* main.m in Sources */,
+				32FB37EF24C036AA009BB23E /* SGHCallCppClassViewController.mm in Sources */,
+				32FB37F324C036E6009BB23E /* SGHTextCppClass.cpp in Sources */,
+				32FB37E024C02F4A009BB23E /* UIViewController+ExecuteMethod.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		32FB37C124C02DC1009BB23E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32FB37C224C02DC1009BB23E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		32FB37C624C02DC3009BB23E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32FB37C724C02DC3009BB23E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32FB37CC24C02DC3009BB23E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		32FB37CD24C02DC3009BB23E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32FB37CF24C02DC3009BB23E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E059481AD3B41273637ED9F4 /* Pods-DataStructuresAndAlgorithms.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4A67L5PAT;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				INFOPLIST_FILE = DataStructuresAndAlgorithms/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluestone.univer2012.DataStructuresAndAlgorithms;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32FB37D024C02DC3009BB23E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7913E0EEC34FDB1F861A341E /* Pods-DataStructuresAndAlgorithms.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4A67L5PAT;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				INFOPLIST_FILE = DataStructuresAndAlgorithms/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluestone.univer2012.DataStructuresAndAlgorithms;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32FB37B024C02DC0009BB23E /* Build configuration list for PBXProject "DataStructuresAndAlgorithms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32FB37CC24C02DC3009BB23E /* Debug */,
+				32FB37CD24C02DC3009BB23E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32FB37CE24C02DC3009BB23E /* Build configuration list for PBXNativeTarget "DataStructuresAndAlgorithms" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32FB37CF24C02DC3009BB23E /* Debug */,
+				32FB37D024C02DC3009BB23E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32FB37AD24C02DC0009BB23E /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_DataStructuresAndAlgorithms {
+  umbrella header "Pods-DataStructuresAndAlgorithms-umbrella.h"
+
+  export *
+  module * { export * }
+}

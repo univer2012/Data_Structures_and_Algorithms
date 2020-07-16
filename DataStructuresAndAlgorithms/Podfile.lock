@@ -1,0 +1,29 @@
+PODS:
+  - Masonry (1.1.0)
+  - ReactiveObjC (3.1.1)
+  - ReactiveObjCBridge (6.0.0):
+    - ReactiveObjC (~> 3.1)
+    - ReactiveSwift (~> 6.1)
+  - ReactiveSwift (6.3.0)
+
+DEPENDENCIES:
+  - Masonry
+  - ReactiveObjC
+  - ReactiveObjCBridge
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+    - ReactiveObjC
+    - ReactiveObjCBridge
+    - ReactiveSwift
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  ReactiveObjCBridge: 5502e3da1f092d39953ac27816f3441e01eb875a
+  ReactiveSwift: 7937f26ec18d555e2a99352bd0a8b2817d1f042d
+
+PODFILE CHECKSUM: 09f5cdd5f08ef33cc37152cda59ac588802f0779
+
+COCOAPODS: 1.9.3
