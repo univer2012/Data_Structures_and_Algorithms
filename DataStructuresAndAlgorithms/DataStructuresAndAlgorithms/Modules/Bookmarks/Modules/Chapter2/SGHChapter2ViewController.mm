@@ -13,6 +13,8 @@
 //#include <iostream>
 //using namespace std;
 
+
+
 @interface SGHChapter2ViewController ()
 
 @end
@@ -36,20 +38,75 @@
     //MARK: section 1
     NSArray *tempTitleArray2 = @[
         @"1.预备知识：链表基础",
+        @"1-a:测试",
+        @"1-b:测试",
     ];
     NSArray *tempClassNameArray2 = @[
         @"sec2demo1",
+        @"sec2demo2",
+        @"sec2demo3",
     ];
     [self addSectionDataWithClassNameArray:tempClassNameArray2 titleArray:tempTitleArray2 title:@"其他"];
 }
+//
+- (void)sec2demo3 {
+    #include "LeeCode92Reverse_Linked_List2.h"
+    
+    ListNode a(1);
+    ListNode b(2);
+    ListNode c(3);
+    ListNode d(4);
+    ListNode e(5);
+    a.next = &b;
+    b.next = &c;
+    c.next = &d;
+    d.next = &e;
+    
+    
+    Solution solve;
+    ListNode *head = solve.reverseBetween(&a, 2, 4);
+    while (head) {
+        printf("%d\n",head->val);
+        head = head->next;
+    }
+    
+}
 
-struct ListNode {
-    int val;        //存储原生的数据域
-    ListNode *next; //存储下一个节点地址的指针域
-};
+- (void)sec2demo2 {
+    #include "LeetCode206ReverseLinkedList.h"
+    
+    ListNode a(1);
+    ListNode b(2);
+    ListNode c(3);
+    ListNode d(4);
+    ListNode e(5);
+    a.next = &b;
+    b.next = &c;
+    c.next = &d;
+    d.next = &e;
+    
+    
+    Solution solve;
+    ListNode *head = &a;
+    printf("before reverse:\n");
+    while (head) {
+        printf("%d\n", head->val);
+        head = head->next;
+    }
+    head = solve.reverseList(&a);
+    printf("After reverse:\n");
+    while (head) {
+        printf("%d\n", head->val);
+        head = head->next;
+    }
+}
 
 //MARK: 1.链表基础
 - (void)sec2demo1 {
+    struct ListNode {
+        int val;        //存储原生的数据域
+        ListNode *next; //存储下一个节点地址的指针域
+    };
     ListNode a;
     ListNode b;
     ListNode c;
