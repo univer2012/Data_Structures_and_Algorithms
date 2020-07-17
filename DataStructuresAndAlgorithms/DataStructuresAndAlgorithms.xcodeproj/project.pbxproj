@@ -27,6 +27,9 @@
 		32FB38CA24C04CF9009BB23E /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 32FB38C924C04CF9009BB23E /* libc++abi.tbd */; };
 		32FB38CE24C05379009BB23E /* LeetCode206ReverseLinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = 32FB38CD24C05379009BB23E /* LeetCode206ReverseLinkedList.c */; };
 		32FB38D224C05E82009BB23E /* LeeCode92Reverse_Linked_List2.c in Sources */ = {isa = PBXBuildFile; fileRef = 32FB38D124C05E82009BB23E /* LeeCode92Reverse_Linked_List2.c */; };
+		32FB38D724C1392C009BB23E /* SGHCppStudent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32FB38D524C1392C009BB23E /* SGHCppStudent.cpp */; };
+		32FB38DB24C13C54009BB23E /* SGHCPlusPlusClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32FB38D924C13C54009BB23E /* SGHCPlusPlusClass.cpp */; };
+		32FB38DE24C13D38009BB23E /* SGHObjectiveCAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FB38DD24C13D38009BB23E /* SGHObjectiveCAdaptor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +68,12 @@
 		32FB38CD24C05379009BB23E /* LeetCode206ReverseLinkedList.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LeetCode206ReverseLinkedList.c; sourceTree = "<group>"; };
 		32FB38D024C05E82009BB23E /* LeeCode92Reverse_Linked_List2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeeCode92Reverse_Linked_List2.h; sourceTree = "<group>"; };
 		32FB38D124C05E82009BB23E /* LeeCode92Reverse_Linked_List2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LeeCode92Reverse_Linked_List2.c; sourceTree = "<group>"; };
+		32FB38D524C1392C009BB23E /* SGHCppStudent.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SGHCppStudent.cpp; sourceTree = "<group>"; };
+		32FB38D624C1392C009BB23E /* SGHCppStudent.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SGHCppStudent.hpp; sourceTree = "<group>"; };
+		32FB38D924C13C54009BB23E /* SGHCPlusPlusClass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SGHCPlusPlusClass.cpp; sourceTree = "<group>"; };
+		32FB38DA24C13C54009BB23E /* SGHCPlusPlusClass.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SGHCPlusPlusClass.hpp; sourceTree = "<group>"; };
+		32FB38DC24C13D38009BB23E /* SGHObjectiveCAdaptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHObjectiveCAdaptor.h; sourceTree = "<group>"; };
+		32FB38DD24C13D38009BB23E /* SGHObjectiveCAdaptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHObjectiveCAdaptor.m; sourceTree = "<group>"; };
 		7913E0EEC34FDB1F861A341E /* Pods-DataStructuresAndAlgorithms.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructuresAndAlgorithms.release.xcconfig"; path = "Target Support Files/Pods-DataStructuresAndAlgorithms/Pods-DataStructuresAndAlgorithms.release.xcconfig"; sourceTree = "<group>"; };
 		AF92991193FBBA89699C382E /* Pods_DataStructuresAndAlgorithms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataStructuresAndAlgorithms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E059481AD3B41273637ED9F4 /* Pods-DataStructuresAndAlgorithms.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructuresAndAlgorithms.debug.xcconfig"; path = "Target Support Files/Pods-DataStructuresAndAlgorithms/Pods-DataStructuresAndAlgorithms.debug.xcconfig"; sourceTree = "<group>"; };
@@ -182,10 +191,11 @@
 		32FB37F024C036C1009BB23E /* CallCppClass */ = {
 			isa = PBXGroup;
 			children = (
-				32FB37F124C036E6009BB23E /* SGHTextCppClass.cpp */,
-				32FB37F224C036E6009BB23E /* SGHTextCppClass.hpp */,
 				32FB37ED24C036AA009BB23E /* SGHCallCppClassViewController.h */,
 				32FB37EE24C036AA009BB23E /* SGHCallCppClassViewController.mm */,
+				32FB38D824C13C42009BB23E /* Demo3 */,
+				32FB38D424C1390E009BB23E /* CppStudent */,
+				32FB38D324C138DE009BB23E /* TestCppClass */,
 			);
 			path = CallCppClass;
 			sourceTree = "<group>";
@@ -193,11 +203,11 @@
 		32FB37F424C03771009BB23E /* Chapter2 */ = {
 			isa = PBXGroup;
 			children = (
+				32FB37E924C03243009BB23E /* SGHChapter2ViewController.h */,
+				32FB37EA24C03243009BB23E /* SGHChapter2ViewController.mm */,
 				32FB38CF24C05E60009BB23E /* LeeCode92 */,
 				32FB38CB24C0533F009BB23E /* LeetCode206_Reverse_Linked_list */,
 				32FB37F524C0377A009BB23E /* 1Linklist */,
-				32FB37E924C03243009BB23E /* SGHChapter2ViewController.h */,
-				32FB37EA24C03243009BB23E /* SGHChapter2ViewController.mm */,
 			);
 			path = Chapter2;
 			sourceTree = "<group>";
@@ -205,8 +215,8 @@
 		32FB37F524C0377A009BB23E /* 1Linklist */ = {
 			isa = PBXGroup;
 			children = (
-				32FB37F624C03842009BB23E /* SGHLinkList.cpp */,
 				32FB37F724C03842009BB23E /* SGHLinkList.hpp */,
+				32FB37F624C03842009BB23E /* SGHLinkList.cpp */,
 			);
 			path = 1Linklist;
 			sourceTree = "<group>";
@@ -227,6 +237,35 @@
 				32FB38D124C05E82009BB23E /* LeeCode92Reverse_Linked_List2.c */,
 			);
 			path = LeeCode92;
+			sourceTree = "<group>";
+		};
+		32FB38D324C138DE009BB23E /* TestCppClass */ = {
+			isa = PBXGroup;
+			children = (
+				32FB37F224C036E6009BB23E /* SGHTextCppClass.hpp */,
+				32FB37F124C036E6009BB23E /* SGHTextCppClass.cpp */,
+			);
+			path = TestCppClass;
+			sourceTree = "<group>";
+		};
+		32FB38D424C1390E009BB23E /* CppStudent */ = {
+			isa = PBXGroup;
+			children = (
+				32FB38D624C1392C009BB23E /* SGHCppStudent.hpp */,
+				32FB38D524C1392C009BB23E /* SGHCppStudent.cpp */,
+			);
+			path = CppStudent;
+			sourceTree = "<group>";
+		};
+		32FB38D824C13C42009BB23E /* Demo3 */ = {
+			isa = PBXGroup;
+			children = (
+				32FB38DA24C13C54009BB23E /* SGHCPlusPlusClass.hpp */,
+				32FB38D924C13C54009BB23E /* SGHCPlusPlusClass.cpp */,
+				32FB38DC24C13D38009BB23E /* SGHObjectiveCAdaptor.h */,
+				32FB38DD24C13D38009BB23E /* SGHObjectiveCAdaptor.m */,
+			);
+			path = Demo3;
 			sourceTree = "<group>";
 		};
 		7EBB9D663B39FCB8209BD3C0 /* Pods */ = {
@@ -363,14 +402,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32FB38DE24C13D38009BB23E /* SGHObjectiveCAdaptor.m in Sources */,
 				32FB38CE24C05379009BB23E /* LeetCode206ReverseLinkedList.c in Sources */,
 				32FB37F824C03842009BB23E /* SGHLinkList.cpp in Sources */,
 				32FB37DA24C02EEE009BB23E /* SGHBookmarksViewController.m in Sources */,
 				32FB37EB24C03243009BB23E /* SGHChapter2ViewController.mm in Sources */,
 				32FB37E724C02FB8009BB23E /* SGHContactsViewController.m in Sources */,
 				32FB38D224C05E82009BB23E /* LeeCode92Reverse_Linked_List2.c in Sources */,
+				32FB38D724C1392C009BB23E /* SGHCppStudent.cpp in Sources */,
 				32FB37BA24C02DC1009BB23E /* AppDelegate.m in Sources */,
 				32FB37E424C02F81009BB23E /* SGHCellModel.m in Sources */,
+				32FB38DB24C13C54009BB23E /* SGHCPlusPlusClass.cpp in Sources */,
 				32FB37E124C02F4A009BB23E /* SHBaseTableViewController.m in Sources */,
 				32FB37D424C02E3A009BB23E /* SGHTabBarViewController.m in Sources */,
 				32FB37CB24C02DC3009BB23E /* main.m in Sources */,
