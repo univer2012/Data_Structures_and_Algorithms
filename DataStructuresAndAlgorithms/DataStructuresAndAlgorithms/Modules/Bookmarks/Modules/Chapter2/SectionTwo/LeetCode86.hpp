@@ -16,5 +16,6 @@
 #define LeetCode86_hpp
 
 #include <stdio.h>
+#import "ListNode.h"
 
 #endif /* LeetCode86_hpp */
