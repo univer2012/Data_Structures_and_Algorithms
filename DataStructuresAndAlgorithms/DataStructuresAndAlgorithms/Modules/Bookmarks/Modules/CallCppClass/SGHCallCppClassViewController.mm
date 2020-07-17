@@ -29,7 +29,7 @@
     
     //MARK: section 1
     NSArray *tempTitleArray = @[
-        @"1.测试OC调用cpp代码",
+        @"1.调用C++的静态方法",
         @"3.测试:如何在oc的类中调用c++对象",
     ];
     NSArray *tempClassNameArray = @[
@@ -50,7 +50,7 @@
     [testObjectiveCObj objectiveFunc];
     //[testObjectiveCObj release];
     
-    //直接调用c++的类
+    //直接调用c++的类，这个方式是正确的
     CPlusPlusClass * cppClass = new CPlusPlusClass();
     cppClass->setInt(8);
     cppClass->func();
@@ -62,8 +62,9 @@
 //    student->getWeight();
 //    delete student;
 }
-
+//MARK: 1.调用C++的静态方法
 - (void)demo1 {
+    
     const char *pathChar = "a";
     MyCppClass::ShowMsg(pathChar);
     float * array = GetDotClass::GetDot();
