@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		11DE63D66125784A1F0EB226 /* Pods_DataStructuresAndAlgorithms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF92991193FBBA89699C382E /* Pods_DataStructuresAndAlgorithms.framework */; };
+		32B7709824C1981E0016795B /* LeetCode160.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32B7709624C1981E0016795B /* LeetCode160.cpp */; };
+		32B7709B24C1A8AE0016795B /* LeetCode141.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32B7709924C1A8AE0016795B /* LeetCode141.cpp */; };
+		32B7709E24C1B4FC0016795B /* LeetCode86.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32B7709C24C1B4FC0016795B /* LeetCode86.cpp */; };
 		32FB37BA24C02DC1009BB23E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FB37B924C02DC1009BB23E /* AppDelegate.m */; };
 		32FB37C324C02DC1009BB23E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32FB37C124C02DC1009BB23E /* Main.storyboard */; };
 		32FB37C524C02DC3009BB23E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32FB37C424C02DC3009BB23E /* Assets.xcassets */; };
@@ -24,8 +27,6 @@
 		32FB37F324C036E6009BB23E /* SGHTextCppClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32FB37F124C036E6009BB23E /* SGHTextCppClass.cpp */; };
 		32FB38C824C04CB8009BB23E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 32FB38C724C04CB8009BB23E /* libc++.tbd */; };
 		32FB38CA24C04CF9009BB23E /* libc++abi.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 32FB38C924C04CF9009BB23E /* libc++abi.tbd */; };
-		32FB38CE24C05379009BB23E /* LeetCode206ReverseLinkedList.c in Sources */ = {isa = PBXBuildFile; fileRef = 32FB38CD24C05379009BB23E /* LeetCode206ReverseLinkedList.c */; };
-		32FB38D224C05E82009BB23E /* LeeCode92Reverse_Linked_List2.c in Sources */ = {isa = PBXBuildFile; fileRef = 32FB38D124C05E82009BB23E /* LeeCode92Reverse_Linked_List2.c */; };
 		32FB38D724C1392C009BB23E /* SGHCppStudent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32FB38D524C1392C009BB23E /* SGHCppStudent.cpp */; };
 		32FB38DB24C13C54009BB23E /* SGHCPlusPlusClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32FB38D924C13C54009BB23E /* SGHCPlusPlusClass.cpp */; };
 		32FB38DE24C13D38009BB23E /* SGHObjectiveCAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FB38DD24C13D38009BB23E /* SGHObjectiveCAdaptor.m */; };
@@ -34,6 +35,13 @@
 /* Begin PBXFileReference section */
 		32B7708B24C187B90016795B /* SGHLinkList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHLinkList.h; sourceTree = "<group>"; };
 		32B7709124C191690016795B /* SGHDoubleLinkList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHDoubleLinkList.h; sourceTree = "<group>"; };
+		32B7709224C195400016795B /* ListNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListNode.h; sourceTree = "<group>"; };
+		32B7709624C1981E0016795B /* LeetCode160.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LeetCode160.cpp; sourceTree = "<group>"; };
+		32B7709724C1981E0016795B /* LeetCode160.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LeetCode160.hpp; sourceTree = "<group>"; };
+		32B7709924C1A8AE0016795B /* LeetCode141.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LeetCode141.cpp; sourceTree = "<group>"; };
+		32B7709A24C1A8AE0016795B /* LeetCode141.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LeetCode141.hpp; sourceTree = "<group>"; };
+		32B7709C24C1B4FC0016795B /* LeetCode86.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LeetCode86.cpp; sourceTree = "<group>"; };
+		32B7709D24C1B4FC0016795B /* LeetCode86.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LeetCode86.hpp; sourceTree = "<group>"; };
 		32FB37B524C02DC0009BB23E /* DataStructuresAndAlgorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataStructuresAndAlgorithms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32FB37B824C02DC0009BB23E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32FB37B924C02DC1009BB23E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -64,9 +72,7 @@
 		32FB38C724C04CB8009BB23E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		32FB38C924C04CF9009BB23E /* libc++abi.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++abi.tbd"; path = "usr/lib/libc++abi.tbd"; sourceTree = SDKROOT; };
 		32FB38CC24C05379009BB23E /* LeetCode206ReverseLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetCode206ReverseLinkedList.h; sourceTree = "<group>"; };
-		32FB38CD24C05379009BB23E /* LeetCode206ReverseLinkedList.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LeetCode206ReverseLinkedList.c; sourceTree = "<group>"; };
 		32FB38D024C05E82009BB23E /* LeeCode92Reverse_Linked_List2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeeCode92Reverse_Linked_List2.h; sourceTree = "<group>"; };
-		32FB38D124C05E82009BB23E /* LeeCode92Reverse_Linked_List2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = LeeCode92Reverse_Linked_List2.c; sourceTree = "<group>"; };
 		32FB38D524C1392C009BB23E /* SGHCppStudent.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SGHCppStudent.cpp; sourceTree = "<group>"; };
 		32FB38D624C1392C009BB23E /* SGHCppStudent.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SGHCppStudent.hpp; sourceTree = "<group>"; };
 		32FB38D924C13C54009BB23E /* SGHCPlusPlusClass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SGHCPlusPlusClass.cpp; sourceTree = "<group>"; };
@@ -104,8 +110,15 @@
 		32B7708F24C191060016795B /* SectionTwo */ = {
 			isa = PBXGroup;
 			children = (
-				32FB38CF24C05E60009BB23E /* LeeCode92 */,
-				32FB38CB24C0533F009BB23E /* LeetCode206_Reverse_Linked_list */,
+				32B7709224C195400016795B /* ListNode.h */,
+				32B7709D24C1B4FC0016795B /* LeetCode86.hpp */,
+				32B7709C24C1B4FC0016795B /* LeetCode86.cpp */,
+				32B7709A24C1A8AE0016795B /* LeetCode141.hpp */,
+				32B7709924C1A8AE0016795B /* LeetCode141.cpp */,
+				32B7709724C1981E0016795B /* LeetCode160.hpp */,
+				32B7709624C1981E0016795B /* LeetCode160.cpp */,
+				32FB38D024C05E82009BB23E /* LeeCode92Reverse_Linked_List2.h */,
+				32FB38CC24C05379009BB23E /* LeetCode206ReverseLinkedList.h */,
 			);
 			path = SectionTwo;
 			sourceTree = "<group>";
@@ -242,24 +255,6 @@
 				32B7708B24C187B90016795B /* SGHLinkList.h */,
 			);
 			path = 1Linklist;
-			sourceTree = "<group>";
-		};
-		32FB38CB24C0533F009BB23E /* LeetCode206_Reverse_Linked_list */ = {
-			isa = PBXGroup;
-			children = (
-				32FB38CC24C05379009BB23E /* LeetCode206ReverseLinkedList.h */,
-				32FB38CD24C05379009BB23E /* LeetCode206ReverseLinkedList.c */,
-			);
-			path = LeetCode206_Reverse_Linked_list;
-			sourceTree = "<group>";
-		};
-		32FB38CF24C05E60009BB23E /* LeeCode92 */ = {
-			isa = PBXGroup;
-			children = (
-				32FB38D024C05E82009BB23E /* LeeCode92Reverse_Linked_List2.h */,
-				32FB38D124C05E82009BB23E /* LeeCode92Reverse_Linked_List2.c */,
-			);
-			path = LeeCode92;
 			sourceTree = "<group>";
 		};
 		32FB38D324C138DE009BB23E /* TestCppClass */ = {
@@ -426,17 +421,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				32FB38DE24C13D38009BB23E /* SGHObjectiveCAdaptor.m in Sources */,
-				32FB38CE24C05379009BB23E /* LeetCode206ReverseLinkedList.c in Sources */,
 				32FB37DA24C02EEE009BB23E /* SGHBookmarksViewController.m in Sources */,
 				32FB37EB24C03243009BB23E /* SGHChapter2ViewController.mm in Sources */,
 				32FB37E724C02FB8009BB23E /* SGHContactsViewController.m in Sources */,
-				32FB38D224C05E82009BB23E /* LeeCode92Reverse_Linked_List2.c in Sources */,
+				32B7709824C1981E0016795B /* LeetCode160.cpp in Sources */,
 				32FB38D724C1392C009BB23E /* SGHCppStudent.cpp in Sources */,
 				32FB37BA24C02DC1009BB23E /* AppDelegate.m in Sources */,
 				32FB37E424C02F81009BB23E /* SGHCellModel.m in Sources */,
+				32B7709E24C1B4FC0016795B /* LeetCode86.cpp in Sources */,
 				32FB38DB24C13C54009BB23E /* SGHCPlusPlusClass.cpp in Sources */,
 				32FB37E124C02F4A009BB23E /* SHBaseTableViewController.m in Sources */,
 				32FB37D424C02E3A009BB23E /* SGHTabBarViewController.m in Sources */,
+				32B7709B24C1A8AE0016795B /* LeetCode141.cpp in Sources */,
 				32FB37CB24C02DC3009BB23E /* main.m in Sources */,
 				32FB37EF24C036AA009BB23E /* SGHCallCppClassViewController.mm in Sources */,
 				32FB37F324C036E6009BB23E /* SGHTextCppClass.cpp in Sources */,

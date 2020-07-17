@@ -8,8 +8,9 @@
 
 #import "SGHChapter2ViewController.h"
 
-#include "SGHLinkList.h"
-#include "SGHDoubleLinkList.h"
+#import "SGHLinkList.h"
+#import "SGHDoubleLinkList.h"
+#import "ListNode.h"
 
 #include <iostream>
 using namespace std;
@@ -40,14 +41,92 @@ using namespace std;
         @"1.预备知识：链表基础",
         @"1-a:测试",
         @"1-b:测试",
+        @"LeetCode160:求两个链表的交点",
+        @"LeetCode141:链表求环",
     ];
     NSArray *tempClassNameArray2 = @[
         @"sec2demo1",
         @"sec2demo2",
         @"sec2demo3",
+        @"sec2demo4",
+        @"sec2demo5",
     ];
     [self addSectionDataWithClassNameArray:tempClassNameArray2 titleArray:tempTitleArray2 title:@"其他"];
 }
+
+//
+
+//
+- (void)sec2demo5 {
+    #include "LeetCode141.hpp"
+    ListNode a(1);
+    ListNode b(2);
+    ListNode c(3);
+    ListNode d(4);
+    ListNode e(5);
+    ListNode f(6);
+    ListNode g(7);
+    
+    a.next = &b;
+    b.next = &c;
+    c.next = &d;
+    d.next = &e;
+    e.next = &f;
+    f.next = &g;
+    g.next = &c;
+    
+    /*
+     1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7
+               |                   |
+               -----<-------<-------
+     */
+    
+    Solution2 solve;
+    ListNode *node = solve.detectCycle(&a);
+    if (node) {
+        printf("%d\n",node->val);
+    } else {
+        printf("NULL\n");
+    }
+}
+
+//
+- (void)sec2demo4 {
+    #include "LeetCode160.hpp"
+    
+    
+    ListNode a1(1);
+    ListNode a2(2);
+    
+    ListNode b1(3);
+    ListNode b2(4);
+    ListNode b3(5);
+    
+    ListNode c1(6);
+    ListNode c2(7);
+    ListNode c3(8);
+    
+    a1.next = &a2;
+    a2.next = &c1;
+    c1.next = &c2;
+    c2.next = &c3;
+    
+    b1.next = &b2;
+    b2.next = &b3;
+    b3.next = &c1;
+    
+    ListNode headA = a1;    // 1 <- 2 <- 6 <- 7 <- 8
+    ListNode headB = b1;    // 3 <- 4 <- 5 <- 6
+    
+//    Solution solve;
+//    ListNode *result = solve.getIntersectionNode(&headA, &headB);
+//    printf("%d\n",result->val);
+    
+    Solution2 solve2;
+    ListNode *result2 = solve2.getIntersectionNode(&headA, &headB);
+    printf("%d\n",result2->val);
+}
+
 //
 - (void)sec2demo3 {
     #include "LeeCode92Reverse_Linked_List2.h"
