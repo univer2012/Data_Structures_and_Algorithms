@@ -43,6 +43,7 @@ using namespace std;
         @"1-b:测试",
         @"LeetCode160:求两个链表的交点",
         @"LeetCode141:链表求环",
+        @"LeetCode86:链表划分",
     ];
     NSArray *tempClassNameArray2 = @[
         @"sec2demo1",
@@ -50,12 +51,32 @@ using namespace std;
         @"sec2demo3",
         @"sec2demo4",
         @"sec2demo5",
+        @"sec2demo6",
     ];
     [self addSectionDataWithClassNameArray:tempClassNameArray2 titleArray:tempTitleArray2 title:@"其他"];
 }
 
 //
-
+- (void)sec2demo6 {
+#include "LeetCode86.hpp"
+    ListNode a(1);
+    ListNode b(4);
+    ListNode c(3);
+    ListNode d(2);
+    ListNode e(5);
+    ListNode f(2);
+    a.next = &b;
+    b.next = &c;
+    c.next = &d;
+    d.next = &e;
+    e.next = &f;
+    Solution solve;
+    ListNode *head = solve.partition(&a, 3);
+    while (head) {
+        printf("%d\n",head->val);
+        head = head->next;
+    }
+}
 //
 - (void)sec2demo5 {
     #include "LeetCode141.hpp"
