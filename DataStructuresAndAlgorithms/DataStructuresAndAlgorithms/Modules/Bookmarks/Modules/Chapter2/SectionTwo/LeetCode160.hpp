@@ -19,33 +19,15 @@
 
 #import "ListNode.h"
 
-class Solution {
+class Solution160_1 {
 public:
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB);
 };
 
 
-class Solution2 {
+class Solution160_2 {
 public:
-    ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
-        //求A、B两个链表长度
-        int list_A_len = get_list_length(headA);
-        int list_B_len = get_list_length(headB);
-        if (list_A_len > list_B_len) {  //如果链表A长，移动headA到对应位置
-            headA = forward_long_list(list_A_len, list_B_len, headA);
-        } else {        //如果链表B长，移动headB到对应位置
-            headB = forward_long_list(list_B_len, list_A_len, headB);
-        }
-        
-        while (headA && headB) {
-            if (headA == headB) {   //当两指针指向了同一个节点时，说明找到了！
-                return headA;;
-            }
-            headA = headA->next;
-            headB = headB->next;
-        }
-        return NULL;
-    }
+    ListNode *getIntersectionNode(ListNode *headA, ListNode *headB);
     
 private:
     int get_list_length(ListNode *head) {

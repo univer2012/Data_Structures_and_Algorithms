@@ -19,7 +19,7 @@
 #import "ListNode.h"
 
 //思路，巧用临时头节点
-class Solution {
+class Solution86 {
 public:
     ListNode *partition(ListNode *head, int x) {
         //设置两个临时的头节点

@@ -10,7 +10,17 @@
 
 #import "SGHLinkList.h"
 #import "SGHDoubleLinkList.h"
+
+
 #import "ListNode.h"
+#include "LeetCode206.hpp"
+#include "LeetCode92.hpp"
+#include "LeetCode160.hpp"
+#include "LeetCode141.hpp"
+#include "LeetCode86.hpp"
+#include "LeetCode138.hpp"
+
+#include <map>  //STL map头文件
 
 #include <iostream>
 using namespace std;
@@ -44,6 +54,8 @@ using namespace std;
         @"LeetCode160:求两个链表的交点",
         @"LeetCode141:链表求环",
         @"LeetCode86:链表划分",
+        @"例5：必备知识（STL Map的使用）",
+        @"LeetCode138:深拷贝random链表",
     ];
     NSArray *tempClassNameArray2 = @[
         @"sec2demo1",
@@ -52,13 +64,64 @@ using namespace std;
         @"sec2demo4",
         @"sec2demo5",
         @"sec2demo6",
+        @"sec2demo7",
+        @"sec2demo8",
     ];
     [self addSectionDataWithClassNameArray:tempClassNameArray2 titleArray:tempTitleArray2 title:@"其他"];
 }
 
+- (void)sec2demo8 {
+    
+    RandomListNode a(1);
+    RandomListNode b(2);
+    RandomListNode c(3);
+    RandomListNode d(4);
+    RandomListNode e(5);
+    a.next = &b;
+    b.next = &c;
+    c.next = &d;
+    d.next = &e;
+    a.random = &c;
+    b.random = &d;
+    c.random = &c;
+    e.random = &d;
+    
+    Solution138 solve;
+    RandomListNode *head = solve.copyRandomList(&a);
+    while (head) {
+        printf("label = %d", head->label);
+        if (head->random) {
+            printf("rand = %d\n",head->random->label);
+        } else {
+            printf("rand = NULL\n");
+        }
+        head = head->next;
+    }
+}
+
+- (void)sec2demo7 {
+    //必备知识（STL Map的使用）
+    
+    std::map<RandomListNode*, int> node_map;    //设置一个节点map，key为节点地址，value为整型
+    RandomListNode a(5);
+    RandomListNode b(3);
+    RandomListNode c(6);
+    a.next = &b;
+    b.next = &c;
+    a.random = &c;
+    b.random = &a;
+    c.random = &c;
+    node_map[&a] = 1;
+    node_map[&b] = 2;
+    node_map[&c] = 3;
+    printf("a.random id = %d\n",node_map[a.random]);
+    printf("b.random id = %d\n",node_map[b.random]);
+    printf("c.random id = %d\n",node_map[c.random]);
+}
+
 //
 - (void)sec2demo6 {
-#include "LeetCode86.hpp"
+    
     ListNode a(1);
     ListNode b(4);
     ListNode c(3);
@@ -70,7 +133,7 @@ using namespace std;
     c.next = &d;
     d.next = &e;
     e.next = &f;
-    Solution solve;
+    Solution86 solve;
     ListNode *head = solve.partition(&a, 3);
     while (head) {
         printf("%d\n",head->val);
@@ -79,7 +142,7 @@ using namespace std;
 }
 //
 - (void)sec2demo5 {
-    #include "LeetCode141.hpp"
+    
     ListNode a(1);
     ListNode b(2);
     ListNode c(3);
@@ -101,8 +164,15 @@ using namespace std;
                |                   |
                -----<-------<-------
      */
+    Solution141_1 solve1;
+    ListNode *node1 = solve1.detectCycle(&a);
+    if (node1) {
+        printf("%d\n",node1->val);
+    } else {
+        printf("NULL\n");
+    }
     
-    Solution2 solve;
+    Solution141_2 solve;
     ListNode *node = solve.detectCycle(&a);
     if (node) {
         printf("%d\n",node->val);
@@ -111,11 +181,8 @@ using namespace std;
     }
 }
 
-//
+//MARK: LeetCode160
 - (void)sec2demo4 {
-    #include "LeetCode160.hpp"
-    
-    
     ListNode a1(1);
     ListNode a2(2);
     
@@ -139,18 +206,17 @@ using namespace std;
     ListNode headA = a1;    // 1 <- 2 <- 6 <- 7 <- 8
     ListNode headB = b1;    // 3 <- 4 <- 5 <- 6
     
-//    Solution solve;
-//    ListNode *result = solve.getIntersectionNode(&headA, &headB);
-//    printf("%d\n",result->val);
+    Solution160_1 solve;
+    ListNode *result = solve.getIntersectionNode(&headA, &headB);
+    printf("%d\n",result->val);
     
-    Solution2 solve2;
+    Solution160_2 solve2;
     ListNode *result2 = solve2.getIntersectionNode(&headA, &headB);
     printf("%d\n",result2->val);
 }
 
-//
+//MARK: LeeCode92
 - (void)sec2demo3 {
-    #include "LeeCode92Reverse_Linked_List2.h"
     
     ListNode a(1);
     ListNode b(2);
@@ -163,7 +229,7 @@ using namespace std;
     d.next = &e;
     
     
-    Solution solve;
+    Solution92 solve;
     ListNode *head = solve.reverseBetween(&a, 2, 4);
     while (head) {
         printf("%d\n",head->val);
@@ -172,8 +238,8 @@ using namespace std;
     
 }
 
+//MARK: LeetCode206
 - (void)sec2demo2 {
-    #include "LeetCode206ReverseLinkedList.h"
     
     ListNode a(1);
     ListNode b(2);
@@ -186,7 +252,7 @@ using namespace std;
     d.next = &e;
     
     
-    Solution solve;
+    Solution206 solve;
     ListNode *head = &a;
     printf("before reverse:\n");
     while (head) {
