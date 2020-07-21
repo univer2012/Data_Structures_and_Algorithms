@@ -23,6 +23,9 @@
 		32B770C224C5806B0016795B /* LeetCode232.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32B770C024C5806B0016795B /* LeetCode232.cpp */; };
 		32B770C524C584FB0016795B /* LeetCode155.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32B770C324C584FB0016795B /* LeetCode155.cpp */; };
 		32B770C824C58BB10016795B /* POJ1363Rails.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32B770C624C58BB10016795B /* POJ1363Rails.cpp */; };
+		32B770CB24C679990016795B /* LeetCode224.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32B770C924C679990016795B /* LeetCode224.cpp */; };
+		32B770CE24C6966D0016795B /* LeetCode215.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32B770CC24C6966D0016795B /* LeetCode215.cpp */; };
+		32B770D124C6C4910016795B /* LeetCode295.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32B770CF24C6C4910016795B /* LeetCode295.cpp */; };
 		32FB37BA24C02DC1009BB23E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FB37B924C02DC1009BB23E /* AppDelegate.m */; };
 		32FB37C324C02DC1009BB23E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32FB37C124C02DC1009BB23E /* Main.storyboard */; };
 		32FB37C524C02DC3009BB23E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32FB37C424C02DC3009BB23E /* Assets.xcassets */; };
@@ -78,6 +81,12 @@
 		32B770C424C584FB0016795B /* LeetCode155.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LeetCode155.hpp; sourceTree = "<group>"; };
 		32B770C624C58BB10016795B /* POJ1363Rails.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = POJ1363Rails.cpp; sourceTree = "<group>"; };
 		32B770C724C58BB10016795B /* POJ1363Rails.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = POJ1363Rails.hpp; sourceTree = "<group>"; };
+		32B770C924C679990016795B /* LeetCode224.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LeetCode224.cpp; sourceTree = "<group>"; };
+		32B770CA24C679990016795B /* LeetCode224.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LeetCode224.hpp; sourceTree = "<group>"; };
+		32B770CC24C6966D0016795B /* LeetCode215.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LeetCode215.cpp; sourceTree = "<group>"; };
+		32B770CD24C6966D0016795B /* LeetCode215.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LeetCode215.hpp; sourceTree = "<group>"; };
+		32B770CF24C6C4910016795B /* LeetCode295.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LeetCode295.cpp; sourceTree = "<group>"; };
+		32B770D024C6C4910016795B /* LeetCode295.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LeetCode295.hpp; sourceTree = "<group>"; };
 		32FB37B524C02DC0009BB23E /* DataStructuresAndAlgorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataStructuresAndAlgorithms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32FB37B824C02DC0009BB23E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		32FB37B924C02DC1009BB23E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -188,6 +197,12 @@
 		32B770B524C577930016795B /* 1Stack */ = {
 			isa = PBXGroup;
 			children = (
+				32B770D024C6C4910016795B /* LeetCode295.hpp */,
+				32B770CF24C6C4910016795B /* LeetCode295.cpp */,
+				32B770CD24C6966D0016795B /* LeetCode215.hpp */,
+				32B770CC24C6966D0016795B /* LeetCode215.cpp */,
+				32B770CA24C679990016795B /* LeetCode224.hpp */,
+				32B770C924C679990016795B /* LeetCode224.cpp */,
 				32B770C724C58BB10016795B /* POJ1363Rails.hpp */,
 				32B770C624C58BB10016795B /* POJ1363Rails.cpp */,
 				32B770C424C584FB0016795B /* LeetCode155.hpp */,
@@ -513,18 +528,21 @@
 				32FB37DA24C02EEE009BB23E /* SGHBookmarksViewController.m in Sources */,
 				32FB37EB24C03243009BB23E /* SGHChapter2ViewController.mm in Sources */,
 				32B770A724C541F60016795B /* LeetCode92.cpp in Sources */,
+				32B770D124C6C4910016795B /* LeetCode295.cpp in Sources */,
 				32FB37E724C02FB8009BB23E /* SGHContactsViewController.m in Sources */,
 				32B7709824C1981E0016795B /* LeetCode160.cpp in Sources */,
 				32B770A124C53A300016795B /* LeetCode138.cpp in Sources */,
 				32FB38D724C1392C009BB23E /* SGHCppStudent.cpp in Sources */,
 				32FB37BA24C02DC1009BB23E /* AppDelegate.m in Sources */,
 				32B770B024C572B50016795B /* SGHLinkList.cpp in Sources */,
+				32B770CE24C6966D0016795B /* LeetCode215.cpp in Sources */,
 				32FB37E424C02F81009BB23E /* SGHCellModel.m in Sources */,
 				32B770BF24C57BC00016795B /* LeetCode225.cpp in Sources */,
 				32B7709E24C1B4FC0016795B /* LeetCode86.cpp in Sources */,
 				32B770C224C5806B0016795B /* LeetCode232.cpp in Sources */,
 				32FB38DB24C13C54009BB23E /* SGHCPlusPlusClass.cpp in Sources */,
 				32B770C524C584FB0016795B /* LeetCode155.cpp in Sources */,
+				32B770CB24C679990016795B /* LeetCode224.cpp in Sources */,
 				32FB37E124C02F4A009BB23E /* SHBaseTableViewController.m in Sources */,
 				32B770AD24C55E210016795B /* LeetCode23.cpp in Sources */,
 				32FB37D424C02E3A009BB23E /* SGHTabBarViewController.m in Sources */,

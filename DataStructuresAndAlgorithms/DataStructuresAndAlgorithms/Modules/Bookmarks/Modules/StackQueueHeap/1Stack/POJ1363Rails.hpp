@@ -43,17 +43,7 @@ static bool check_is_valid_order(std::queue<int> & order) {
 }
 
 
-#include <string>
 
-static void stringToInt() {
-    //将字符串“12345”转换为整型12345
-    int number = 0;
-    std::string s = "12345";
-    for (int i = 0; i < s.length(); i++) {
-        number = number * 10 + s[i] - '0';
-    }
-    printf("number = %d\n", number);
-}
 
 
 
