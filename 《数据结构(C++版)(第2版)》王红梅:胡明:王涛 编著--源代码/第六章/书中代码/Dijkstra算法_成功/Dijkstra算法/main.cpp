@@ -74,7 +74,14 @@ void dijkstra(MGraph G,int v/*每行*/) { //不可以写Dijstra,不然会报错.
     }
 }
 
+
+
+void POJ1363Rails();
+
+
 int main(int argc, const char * argv[]) {
+    
+#if 0
     // insert code here..
     MGraph eg;
     cout<<"-----------"<<endl;
@@ -110,5 +117,65 @@ int main(int argc, const char * argv[]) {
     dijkstra(eg, 1);    //0 表示以下标为0的点  作为源点
 
     
+#elif 1
+    
+    POJ1363Rails();
+#endif
+    
     return 0;
+}
+
+
+
+//MARK: poj测试与提交
+
+#include <stack>
+#include <queue>
+
+
+//整体算法复杂度O(n)
+bool check_is_valid_order(std::queue<int> & order) {
+    std::stack<int> S;      //S为模拟栈
+    
+    unsigned long n = order.size(); //n为序列长度，将 1 ~ n 按顺序入栈
+    
+    for (int i = 1; i <= n; i++) {
+        S.push(i);  //对元素i做入栈操作
+        
+        while (!S.empty() && order.front() == S.top()) {
+            S.pop();
+            order.pop();
+        }
+    }
+    
+    if (!S.empty()) {   //如果栈不空，就返回false即不是合法的序列
+        return false;
+    }
+    return true;
+}
+
+void POJ1363Rails() {
+    int n;
+    int train;
+    scanf("%d", &n);
+    while (n) {
+        scanf("%d", &train);
+        while (train) {
+            std::queue<int> order;
+            order.push(train);
+            for (int i = 1; i < n; i++) {
+                scanf("%d",&train);
+                order.push(train);
+            }
+            if (check_is_valid_order(order)) {
+                printf("Yes\n");
+            } else {
+                printf("No\n");
+            }
+            scanf("%d", &train);
+        }
+        
+        printf("\n");
+        scanf("%d", &n);
+    }
 }

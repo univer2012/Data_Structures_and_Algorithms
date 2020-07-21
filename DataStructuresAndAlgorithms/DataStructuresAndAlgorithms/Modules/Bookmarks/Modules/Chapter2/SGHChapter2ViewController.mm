@@ -9,6 +9,7 @@
 #import "SGHChapter2ViewController.h"
 
 #import "SGHLinkList.h"
+//#include "SGHLinkList.hpp"
 #import "SGHDoubleLinkList.h"
 
 
@@ -19,9 +20,11 @@
 #include "LeetCode141.hpp"
 #include "LeetCode86.hpp"
 #include "LeetCode138.hpp"
+#include "LeetCode21.hpp"
+#include "LeetCode23.hpp"
 
 #include <map>  //STL map头文件
-
+#include <vector>
 #include <iostream>
 using namespace std;
 
@@ -56,6 +59,9 @@ using namespace std;
         @"LeetCode86:链表划分",
         @"例5：必备知识（STL Map的使用）",
         @"LeetCode138:深拷贝random链表",
+        @"LeetCode21:例6-a：排序链表的合并（2个）",
+        @"LeetCode23:例6-b:方法2思考，排序后相连",
+        @"LeetCode23:例6-b:实现（分治）",
     ];
     NSArray *tempClassNameArray2 = @[
         @"sec2demo1",
@@ -66,10 +72,68 @@ using namespace std;
         @"sec2demo6",
         @"sec2demo7",
         @"sec2demo8",
+        @"sec2demo9",
+        @"sec2demo10",
+        @"sec2demo11",
     ];
     [self addSectionDataWithClassNameArray:tempClassNameArray2 titleArray:tempTitleArray2 title:@"其他"];
 }
 
+- (void)sec2demo11 {
+    ListNode a(1);
+    ListNode b(4);
+    ListNode c(6);
+    ListNode d(0);
+    ListNode e(5);
+    ListNode f(7);
+    ListNode g(2);
+    ListNode h(3);
+    a.next = &b;
+    b.next = &c;
+    
+    d.next = &e;
+    e.next = &f;
+    
+    g.next = &h;
+    Solution23_4 solve;
+    std::vector<ListNode *>lists;
+    lists.push_back(&a);
+    lists.push_back(&d);
+    lists.push_back(&g);
+    ListNode *head = solve.mergeKLists(lists);
+    while (head) {
+        printf("%d\n", head->val);
+        head = head->next;
+    }
+}
+
+//MARK:
+- (void)sec2demo10 {
+    Solution23_2::test1();
+}
+
+//MARK: LeetCode21
+- (void)sec2demo9 {
+    ListNode a(1);
+    ListNode b(4);
+    ListNode c(6);
+    ListNode d(0);
+    ListNode e(5);
+    ListNode f(7);
+    a.next = &b;
+    b.next = &c;
+    
+    d.next = &e;
+    e.next = &f;
+    Solution21 solve;
+    ListNode *head = solve.mergeTwoLists(&a, &d);
+    while (head) {
+        printf("%d\n",head->val);
+        head = head->next;
+    }
+}
+
+//MARK: LeetCode138
 - (void)sec2demo8 {
     
     RandomListNode a(1);
