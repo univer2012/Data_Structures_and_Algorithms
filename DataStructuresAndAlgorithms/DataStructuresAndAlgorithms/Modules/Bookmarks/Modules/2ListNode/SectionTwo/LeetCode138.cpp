@@ -13,7 +13,7 @@
 RandomListNode *Solution138::copyRandomList(RandomListNode *head) {
     std::map<RandomListNode *, int> node_map;   //地址到节点位置的map
     std::vector<RandomListNode *> node_vec;     //使用vector根据存储节点位置访问地址
-    RandomListNode *ptr = head;
+    RandomListNode *ptr = head;                 //注：ptr是 pointer（指针）的缩写
     int i = 0;
     while (ptr) {
         //将新链表节点push入 node_vec ，生成了新链表节点位置到地址的map
