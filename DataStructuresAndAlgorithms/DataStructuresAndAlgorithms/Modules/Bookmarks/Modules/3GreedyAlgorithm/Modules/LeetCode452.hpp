@@ -10,6 +10,12 @@
 #define LeetCode452_hpp
 
 #include <stdio.h>
+#include <vector>
+
+class Solution452 {
+public:
+    int findMinArrowShots(std::vector<std::pair<int, int>> & points);
+};
 
 #endif /* LeetCode452_hpp */
 /*
