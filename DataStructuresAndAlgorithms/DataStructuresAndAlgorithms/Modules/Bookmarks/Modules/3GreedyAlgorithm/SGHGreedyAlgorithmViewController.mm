@@ -12,6 +12,8 @@
 #include "LeetCode455.hpp"
 #include "LeetCode376.hpp"
 #include "LeetCode402.hpp"
+#include "LeetCode55.hpp"
+#include "LeetCode45.hpp"
 
 #include <iostream>
 
@@ -30,18 +32,47 @@
         @"1.预备知识：贪心法找钱",
         @"2.LeetCode455:分糖果",
         @"3.LeetCode376:摇摆序列",
-        @"4.LeetCode402:  移除K个数字",
+        @"4.LeetCode402:移除K个数字",
+        @"5.LeetCode55:例4-a:跳跃游戏",
+        @"6.LeetCode45:例4-b:跳跃游戏",
     ];
     NSArray *tempClassNameArray = @[
         @"sec1demo1",
         @"sec1demo2",
         @"sec1demo3",
         @"sec1demo4",
+        @"sec1demo5",
+        @"sec1demo6",
     ];
     [self addSectionDataWithClassNameArray:tempClassNameArray titleArray:tempTitleArray title:@"贪心"];
 }
 
-//MARK: 4.LeetCode402:  移除K个数字
+//MARK: 6.LeetCode45:例4-b:跳跃游戏
+- (void)sec1demo6 {
+    std::vector<int> nums;
+    nums.push_back(2);
+    nums.push_back(3);
+    nums.push_back(1);
+    nums.push_back(1);
+    nums.push_back(4);
+    Solution45 solve;
+    printf("%d\n", solve.jump(nums));
+}
+
+//MARK: 5.LeetCode55:例4-a:跳跃游戏
+- (void)sec1demo5 {
+    std::vector<int> nums;
+    nums.push_back(2);
+    nums.push_back(3);
+    nums.push_back(1);
+    nums.push_back(1);
+    nums.push_back(4);
+    Solution55 solve;
+    printf("%d\n", solve.canJump(nums));
+    
+}
+
+//MARK: 4.LeetCode402:移除K个数字
 - (void)sec1demo4 {
     //101,k=1
     Solution402 solve;
