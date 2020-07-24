@@ -19,7 +19,7 @@
 #define LeetCode402_hpp
 
 #include <stdio.h>
-
+#include <string>
 /*
  例3：思考
  一个长度为n的数字，去掉k个数字可以有多少种可能？
@@ -60,5 +60,10 @@
  3. 如何将最后结果存储为字符串并返回？
  
  */
+
+class Solution402 {
+public:
+    std::string removeKdigits(std::string num, int k);
+};
 
 #endif /* LeetCode402_hpp */
