@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		67E38ADF1BC18E0D008CD5EE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67E38ADE1BC18E0D008CD5EE /* main.cpp */; };
 		67E38AE71BC196DB008CD5EE /* LinkList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67E38AE61BC196DB008CD5EE /* LinkList.cpp */; };
+		8FB1AEB224CC983200281126 /* Poj2431Expedition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FB1AEB024CC983200281126 /* Poj2431Expedition.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		67E38ADE1BC18E0D008CD5EE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		67E38AE61BC196DB008CD5EE /* LinkList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LinkList.cpp; sourceTree = "<group>"; };
 		67E38AE81BC196FD008CD5EE /* LinkList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkList.h; sourceTree = "<group>"; };
+		8FB1AEB024CC983200281126 /* Poj2431Expedition.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Poj2431Expedition.cpp; sourceTree = "<group>"; };
+		8FB1AEB124CC983200281126 /* Poj2431Expedition.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Poj2431Expedition.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				67E38ADE1BC18E0D008CD5EE /* main.cpp */,
+				8FB1AEB124CC983200281126 /* Poj2431Expedition.hpp */,
+				8FB1AEB024CC983200281126 /* Poj2431Expedition.cpp */,
 				67E38AE61BC196DB008CD5EE /* LinkList.cpp */,
 				67E38AE81BC196FD008CD5EE /* LinkList.h */,
 			);
@@ -106,6 +111,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 67E38AD21BC18E0D008CD5EE;
@@ -124,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67E38ADF1BC18E0D008CD5EE /* main.cpp in Sources */,
+				8FB1AEB224CC983200281126 /* Poj2431Expedition.cpp in Sources */,
 				67E38AE71BC196DB008CD5EE /* LinkList.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +248,7 @@
 				67E38AE41BC18E0D008CD5EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

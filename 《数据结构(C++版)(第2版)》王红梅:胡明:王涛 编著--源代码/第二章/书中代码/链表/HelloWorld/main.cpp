@@ -8,12 +8,12 @@
 
 #include <iostream>  //引用输入输出流库函数的头文件
 #include "LinkList.cpp"  //引用单链表的类
+
+#include "Poj2431Expedition.hpp"
+
 using namespace std;
 
-
-int main(int argc, const char * argv[]) {
-    // insert code here...
-//    std::cout << "Hello, World!\n";
+void linkListDemo() {
     LinkList <int> a;
     cout<<"执行插入操作:"<<endl;
     try {
@@ -77,6 +77,34 @@ int main(int argc, const char * argv[]) {
     }
     cout<<"执行插入操作后单链表b为:"<<endl;
     b.PrintList();            //输出单链表所有元素
+}
+
+void poj2431ExpeditionDemo() {
+    std::vector<std::pair<int, int>> stop;
+    int N;
+    int L;
+    int P;
+    int distance;
+    int fuel;
+    printf("请输入加油站的个数：N=");
+    scanf("%d",&N);
+    printf("请输入加油站数组：pair<加油站至终点的距离, 加油站汽油量>");
+    for (int i = 0; i < N; i++) {
+        scanf("%d %d",&distance, &fuel);
+        stop.push_back(std::make_pair(distance, fuel));
+    }
+    printf("请输入 起点到终点的距离L 和 起点初始的汽油量P：");
+    scanf("%d %d", &L, &P);
+    printf("输出结果为：");
+    SolutionPoj2431 solve;
+    printf("%d\n",solve.get_minimum_stop(L, P, stop));
+}
+
+
+int main(int argc, const char * argv[]) {
     
+//    linkListDemo();
+    
+    poj2431ExpeditionDemo();
     return 0;
 }

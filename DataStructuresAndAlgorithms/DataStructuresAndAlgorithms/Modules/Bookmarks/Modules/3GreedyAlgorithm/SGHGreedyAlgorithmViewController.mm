@@ -14,6 +14,7 @@
 #include "LeetCode402.hpp"
 #include "LeetCode55.hpp"
 #include "LeetCode45.hpp"
+#include "Poj2431Expedition.hpp"
 
 #include <iostream>
 
@@ -35,6 +36,7 @@
         @"4.LeetCode402:移除K个数字",
         @"5.LeetCode55:例4-a:跳跃游戏",
         @"6.LeetCode45:例4-b:跳跃游戏",
+        @"7.Poj2431Expedition:最优加油方法",
     ];
     NSArray *tempClassNameArray = @[
         @"sec1demo1",
@@ -43,8 +45,32 @@
         @"sec1demo4",
         @"sec1demo5",
         @"sec1demo6",
+        @"sec1demo7",
     ];
     [self addSectionDataWithClassNameArray:tempClassNameArray titleArray:tempTitleArray title:@"贪心"];
+}
+
+//MARK: 7.Poj2431Expedition:最优加油方法
+///这个代码需要在c++的工程中才能运行
+- (void)sec1demo7 {
+    std::vector<std::pair<int, int>> stop;
+    int N;
+    int L;
+    int P;
+    int distance;
+    int fuel;
+    printf("请输入加油站的个数：N=");
+    scanf("%d",&N);
+    printf("请输入加油站数组：pair<加油站至终点的距离, 加油站汽油量>");
+    for (int i = 0; i < N; i++) {
+        scanf("%d %d",&distance, &fuel);
+        stop.push_back(std::make_pair(distance, fuel));
+    }
+    printf("请输入 起点到终点的距离L 和 起点初始的汽油量P：");
+    scanf("%d %d", &L, &P);
+    printf("输出结果为：");
+    SolutionPoj2431 solve;
+    printf("%d\n",solve.get_minimum_stop(L, P, stop));
 }
 
 //MARK: 6.LeetCode45:例4-b:跳跃游戏

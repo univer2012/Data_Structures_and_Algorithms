@@ -54,6 +54,7 @@
 		32FB38D724C1392C009BB23E /* SGHCppStudent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32FB38D524C1392C009BB23E /* SGHCppStudent.cpp */; };
 		32FB38DB24C13C54009BB23E /* SGHCPlusPlusClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32FB38D924C13C54009BB23E /* SGHCPlusPlusClass.cpp */; };
 		32FB38DE24C13D38009BB23E /* SGHObjectiveCAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FB38DD24C13D38009BB23E /* SGHObjectiveCAdaptor.m */; };
+		8FB1AEAF24CC8E2300281126 /* Poj2431Expedition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FB1AEAD24CC8E2300281126 /* Poj2431Expedition.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -150,6 +151,8 @@
 		32FB38DC24C13D38009BB23E /* SGHObjectiveCAdaptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHObjectiveCAdaptor.h; sourceTree = "<group>"; };
 		32FB38DD24C13D38009BB23E /* SGHObjectiveCAdaptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGHObjectiveCAdaptor.m; sourceTree = "<group>"; };
 		7913E0EEC34FDB1F861A341E /* Pods-DataStructuresAndAlgorithms.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructuresAndAlgorithms.release.xcconfig"; path = "Target Support Files/Pods-DataStructuresAndAlgorithms/Pods-DataStructuresAndAlgorithms.release.xcconfig"; sourceTree = "<group>"; };
+		8FB1AEAD24CC8E2300281126 /* Poj2431Expedition.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Poj2431Expedition.cpp; sourceTree = "<group>"; };
+		8FB1AEAE24CC8E2300281126 /* Poj2431Expedition.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Poj2431Expedition.hpp; sourceTree = "<group>"; };
 		AF92991193FBBA89699C382E /* Pods_DataStructuresAndAlgorithms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataStructuresAndAlgorithms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E059481AD3B41273637ED9F4 /* Pods-DataStructuresAndAlgorithms.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructuresAndAlgorithms.debug.xcconfig"; path = "Target Support Files/Pods-DataStructuresAndAlgorithms/Pods-DataStructuresAndAlgorithms.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -267,6 +270,8 @@
 			children = (
 				32B770DC24C6D4620016795B /* SGHPrepareGreedy.hpp */,
 				32B770DB24C6D4620016795B /* SGHPrepareGreedy.cpp */,
+				8FB1AEAE24CC8E2300281126 /* Poj2431Expedition.hpp */,
+				8FB1AEAD24CC8E2300281126 /* Poj2431Expedition.cpp */,
 				3217756224CAED7A00EA3E30 /* LeetCode452.hpp */,
 				3217756124CAED7A00EA3E30 /* LeetCode452.cpp */,
 				3217755F24CAE80300EA3E30 /* LeetCode45.hpp */,
@@ -604,6 +609,7 @@
 				32B770CB24C679990016795B /* LeetCode224.cpp in Sources */,
 				32FB37E124C02F4A009BB23E /* SHBaseTableViewController.m in Sources */,
 				32B770AD24C55E210016795B /* LeetCode23.cpp in Sources */,
+				8FB1AEAF24CC8E2300281126 /* Poj2431Expedition.cpp in Sources */,
 				32FB37D424C02E3A009BB23E /* SGHTabBarViewController.m in Sources */,
 				324E5E2E24C6E0A30033F1BB /* LeetCode376.cpp in Sources */,
 				32B770D524C6D1BF0016795B /* SGHGreedyAlgorithmViewController.mm in Sources */,

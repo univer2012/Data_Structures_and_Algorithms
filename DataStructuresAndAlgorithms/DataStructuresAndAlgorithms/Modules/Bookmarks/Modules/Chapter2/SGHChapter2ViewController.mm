@@ -10,6 +10,8 @@
 
 #import "SGHLinkList.h"
 //#include "SGHLinkList.hpp"
+//using namespace std;
+
 #import "SGHDoubleLinkList.h"
 
 
