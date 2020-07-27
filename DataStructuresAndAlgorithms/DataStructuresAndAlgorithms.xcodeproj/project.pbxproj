@@ -55,6 +55,9 @@
 		32FB38DB24C13C54009BB23E /* SGHCPlusPlusClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32FB38D924C13C54009BB23E /* SGHCPlusPlusClass.cpp */; };
 		32FB38DE24C13D38009BB23E /* SGHObjectiveCAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 32FB38DD24C13D38009BB23E /* SGHObjectiveCAdaptor.m */; };
 		8FB1AEAF24CC8E2300281126 /* Poj2431Expedition.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FB1AEAD24CC8E2300281126 /* Poj2431Expedition.cpp */; };
+		8FB1AEB624CD8F8900281126 /* SGHRecursiveBackViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8FB1AEB524CD8F8900281126 /* SGHRecursiveBackViewController.mm */; };
+		8FB1AEBA24CDB11E00281126 /* SGHPrepareKnowadge1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FB1AEB824CDB11E00281126 /* SGHPrepareKnowadge1.cpp */; };
+		8FB1AEBD24CDB3D400281126 /* SGHPrepareKnowadge2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FB1AEBB24CDB3D400281126 /* SGHPrepareKnowadge2.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -153,6 +156,12 @@
 		7913E0EEC34FDB1F861A341E /* Pods-DataStructuresAndAlgorithms.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructuresAndAlgorithms.release.xcconfig"; path = "Target Support Files/Pods-DataStructuresAndAlgorithms/Pods-DataStructuresAndAlgorithms.release.xcconfig"; sourceTree = "<group>"; };
 		8FB1AEAD24CC8E2300281126 /* Poj2431Expedition.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Poj2431Expedition.cpp; sourceTree = "<group>"; };
 		8FB1AEAE24CC8E2300281126 /* Poj2431Expedition.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Poj2431Expedition.hpp; sourceTree = "<group>"; };
+		8FB1AEB424CD8F8900281126 /* SGHRecursiveBackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGHRecursiveBackViewController.h; sourceTree = "<group>"; };
+		8FB1AEB524CD8F8900281126 /* SGHRecursiveBackViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SGHRecursiveBackViewController.mm; sourceTree = "<group>"; };
+		8FB1AEB824CDB11E00281126 /* SGHPrepareKnowadge1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SGHPrepareKnowadge1.cpp; sourceTree = "<group>"; };
+		8FB1AEB924CDB11E00281126 /* SGHPrepareKnowadge1.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SGHPrepareKnowadge1.hpp; sourceTree = "<group>"; };
+		8FB1AEBB24CDB3D400281126 /* SGHPrepareKnowadge2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SGHPrepareKnowadge2.cpp; sourceTree = "<group>"; };
+		8FB1AEBC24CDB3D400281126 /* SGHPrepareKnowadge2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SGHPrepareKnowadge2.hpp; sourceTree = "<group>"; };
 		AF92991193FBBA89699C382E /* Pods_DataStructuresAndAlgorithms.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataStructuresAndAlgorithms.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E059481AD3B41273637ED9F4 /* Pods-DataStructuresAndAlgorithms.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructuresAndAlgorithms.debug.xcconfig"; path = "Target Support Files/Pods-DataStructuresAndAlgorithms/Pods-DataStructuresAndAlgorithms.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -377,6 +386,7 @@
 		32FB37E824C031FC009BB23E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				8FB1AEB324CD8F1300281126 /* 4RecursiveBack_DivideAndConquer */,
 				32B770D224C6D19A0016795B /* 3GreedyAlgorithm */,
 				32B770D624C6D2520016795B /* 2ListNode */,
 				32B770B124C576A20016795B /* 1StackQueueHeap */,
@@ -454,6 +464,27 @@
 				7913E0EEC34FDB1F861A341E /* Pods-DataStructuresAndAlgorithms.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		8FB1AEB324CD8F1300281126 /* 4RecursiveBack_DivideAndConquer */ = {
+			isa = PBXGroup;
+			children = (
+				8FB1AEB424CD8F8900281126 /* SGHRecursiveBackViewController.h */,
+				8FB1AEB524CD8F8900281126 /* SGHRecursiveBackViewController.mm */,
+				8FB1AEB724CD8F9500281126 /* Modules */,
+			);
+			path = 4RecursiveBack_DivideAndConquer;
+			sourceTree = "<group>";
+		};
+		8FB1AEB724CD8F9500281126 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8FB1AEB924CDB11E00281126 /* SGHPrepareKnowadge1.hpp */,
+				8FB1AEB824CDB11E00281126 /* SGHPrepareKnowadge1.cpp */,
+				8FB1AEBC24CDB3D400281126 /* SGHPrepareKnowadge2.hpp */,
+				8FB1AEBB24CDB3D400281126 /* SGHPrepareKnowadge2.cpp */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		B558CD168017B24971A9A49D /* Frameworks */ = {
@@ -608,6 +639,7 @@
 				32B770C524C584FB0016795B /* LeetCode155.cpp in Sources */,
 				32B770CB24C679990016795B /* LeetCode224.cpp in Sources */,
 				32FB37E124C02F4A009BB23E /* SHBaseTableViewController.m in Sources */,
+				8FB1AEBD24CDB3D400281126 /* SGHPrepareKnowadge2.cpp in Sources */,
 				32B770AD24C55E210016795B /* LeetCode23.cpp in Sources */,
 				8FB1AEAF24CC8E2300281126 /* Poj2431Expedition.cpp in Sources */,
 				32FB37D424C02E3A009BB23E /* SGHTabBarViewController.m in Sources */,
@@ -615,12 +647,14 @@
 				32B770D524C6D1BF0016795B /* SGHGreedyAlgorithmViewController.mm in Sources */,
 				32B7709B24C1A8AE0016795B /* LeetCode141.cpp in Sources */,
 				32FB37CB24C02DC3009BB23E /* main.m in Sources */,
+				8FB1AEBA24CDB11E00281126 /* SGHPrepareKnowadge1.cpp in Sources */,
 				32B770B424C576C50016795B /* SGHStackQueueHeapViewController.mm in Sources */,
 				32FB37EF24C036AA009BB23E /* SGHCallCppClassViewController.mm in Sources */,
 				32FB37F324C036E6009BB23E /* SGHTextCppClass.cpp in Sources */,
 				32B770C824C58BB10016795B /* POJ1363Rails.cpp in Sources */,
 				32FB37E024C02F4A009BB23E /* UIViewController+ExecuteMethod.m in Sources */,
 				32B770A424C53F3D0016795B /* LeetCode21.cpp in Sources */,
+				8FB1AEB624CD8F8900281126 /* SGHRecursiveBackViewController.mm in Sources */,
 				32B770DD24C6D4620016795B /* SGHPrepareGreedy.cpp in Sources */,
 				32B770AA24C542960016795B /* LeetCode206.cpp in Sources */,
 			);
