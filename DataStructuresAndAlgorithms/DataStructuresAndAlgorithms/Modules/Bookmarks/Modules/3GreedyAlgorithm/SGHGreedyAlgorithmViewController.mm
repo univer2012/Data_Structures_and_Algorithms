@@ -22,6 +22,7 @@
 #include "LeetCode40.hpp"
 #include "LeetCode22.hpp"
 #include "LeetCode51.hpp"
+#include "Prepare315.hpp"
 
 #include <iostream>
 
@@ -66,6 +67,7 @@
         @"6.例2：预备知识：递归生成所有可能",
         @"7.例2：生成括号",
         @"8.例3：N皇后",
+        @"9.预备知识：归并两个已排序数组",
     ];
     NSArray *tempClassNameArray2 = @[
         @"sec2demo1",
@@ -76,8 +78,15 @@
         @"sec2demo6",
         @"sec2demo7",
         @"sec2demo8",
+        @"sec2demo9",
     ];
     [self addSectionDataWithClassNameArray:tempClassNameArray2 titleArray:tempTitleArray2 title:@"递归、回溯与分治"];
+}
+
+//MARK: 9.预备知识：归并两个已排序数组
+- (void)sec2demo9 {
+    Prepare315 solve;
+    solve.sec2demo9();
 }
 
 //MARK: 8.例3：N皇后

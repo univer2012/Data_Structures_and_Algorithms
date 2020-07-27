@@ -17,6 +17,8 @@
 		3217770A24CE9CC200EA3E30 /* LeetCode40.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3217770824CE9CC100EA3E30 /* LeetCode40.cpp */; };
 		3217770D24CEA96A00EA3E30 /* LeetCode22.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3217770B24CEA96A00EA3E30 /* LeetCode22.cpp */; };
 		3217777424CEC54000EA3E30 /* LeetCode51.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3217777224CEC54000EA3E30 /* LeetCode51.cpp */; };
+		3217777724CEE2C400EA3E30 /* LeetCode315.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3217777524CEE2C400EA3E30 /* LeetCode315.cpp */; };
+		3217777A24CEE32200EA3E30 /* Prepare315.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3217777824CEE32200EA3E30 /* Prepare315.cpp */; };
 		324E5E2E24C6E0A30033F1BB /* LeetCode376.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 324E5E2C24C6E0A30033F1BB /* LeetCode376.cpp */; };
 		324E5E3124C6EB850033F1BB /* LeetCode402.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 324E5E2F24C6EB850033F1BB /* LeetCode402.cpp */; };
 		32B7709824C1981E0016795B /* LeetCode160.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32B7709624C1981E0016795B /* LeetCode160.cpp */; };
@@ -82,6 +84,10 @@
 		3217770C24CEA96A00EA3E30 /* LeetCode22.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LeetCode22.hpp; sourceTree = "<group>"; };
 		3217777224CEC54000EA3E30 /* LeetCode51.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LeetCode51.cpp; sourceTree = "<group>"; };
 		3217777324CEC54000EA3E30 /* LeetCode51.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LeetCode51.hpp; sourceTree = "<group>"; };
+		3217777524CEE2C400EA3E30 /* LeetCode315.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LeetCode315.cpp; sourceTree = "<group>"; };
+		3217777624CEE2C400EA3E30 /* LeetCode315.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LeetCode315.hpp; sourceTree = "<group>"; };
+		3217777824CEE32200EA3E30 /* Prepare315.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Prepare315.cpp; sourceTree = "<group>"; };
+		3217777924CEE32200EA3E30 /* Prepare315.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Prepare315.hpp; sourceTree = "<group>"; };
 		324E5E2C24C6E0A30033F1BB /* LeetCode376.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LeetCode376.cpp; sourceTree = "<group>"; };
 		324E5E2D24C6E0A30033F1BB /* LeetCode376.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LeetCode376.hpp; sourceTree = "<group>"; };
 		324E5E2F24C6EB850033F1BB /* LeetCode402.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LeetCode402.cpp; sourceTree = "<group>"; };
@@ -204,6 +210,10 @@
 				3217770B24CEA96A00EA3E30 /* LeetCode22.cpp */,
 				3217777324CEC54000EA3E30 /* LeetCode51.hpp */,
 				3217777224CEC54000EA3E30 /* LeetCode51.cpp */,
+				3217777924CEE32200EA3E30 /* Prepare315.hpp */,
+				3217777824CEE32200EA3E30 /* Prepare315.cpp */,
+				3217777624CEE2C400EA3E30 /* LeetCode315.hpp */,
+				3217777524CEE2C400EA3E30 /* LeetCode315.cpp */,
 			);
 			path = 4Modules;
 			sourceTree = "<group>";
@@ -630,6 +640,7 @@
 				32FB37E724C02FB8009BB23E /* SGHContactsViewController.m in Sources */,
 				32B770E024C6D7C60016795B /* LeetCode455.cpp in Sources */,
 				3217777424CEC54000EA3E30 /* LeetCode51.cpp in Sources */,
+				3217777A24CEE32200EA3E30 /* Prepare315.cpp in Sources */,
 				32B7709824C1981E0016795B /* LeetCode160.cpp in Sources */,
 				32B770D924C6D26C0016795B /* SGH2ListNodeViewController.mm in Sources */,
 				32B770A124C53A300016795B /* LeetCode138.cpp in Sources */,
@@ -655,6 +666,7 @@
 				32FB37D424C02E3A009BB23E /* SGHTabBarViewController.m in Sources */,
 				324E5E2E24C6E0A30033F1BB /* LeetCode376.cpp in Sources */,
 				3217770D24CEA96A00EA3E30 /* LeetCode22.cpp in Sources */,
+				3217777724CEE2C400EA3E30 /* LeetCode315.cpp in Sources */,
 				3217769F24CE7F8A00EA3E30 /* LeetCode90.cpp in Sources */,
 				32B770D524C6D1BF0016795B /* SGHGreedyAlgorithmViewController.mm in Sources */,
 				32B7709B24C1A8AE0016795B /* LeetCode141.cpp in Sources */,
