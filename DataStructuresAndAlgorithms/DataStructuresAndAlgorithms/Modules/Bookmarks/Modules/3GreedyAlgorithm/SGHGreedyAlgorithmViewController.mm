@@ -68,6 +68,7 @@
         @"7.例2：生成括号",
         @"8.例3：N皇后",
         @"9.预备知识：归并两个已排序数组",
+        @"10.预备知识：归并排序实现",
     ];
     NSArray *tempClassNameArray2 = @[
         @"sec2demo1",
@@ -79,8 +80,20 @@
         @"sec2demo7",
         @"sec2demo8",
         @"sec2demo9",
+        @"sec2demo10",
     ];
     [self addSectionDataWithClassNameArray:tempClassNameArray2 titleArray:tempTitleArray2 title:@"递归、回溯与分治"];
+}
+
+//MARK: 10.预备知识：归并排序实现
+- (void)sec2demo10 {
+    
+    Prepare315 solve;
+    solve.sec2demo10();
+    solve.sec2demo10_2();
+    
+    
+    
 }
 
 //MARK: 9.预备知识：归并两个已排序数组
