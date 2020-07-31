@@ -23,6 +23,7 @@
 #include "LeetCode22.hpp"
 #include "LeetCode51.hpp"
 #include "Prepare315.hpp"
+#include "LeetCode315.hpp"
 
 #include <iostream>
 
@@ -69,6 +70,7 @@
         @"8.例3：N皇后",
         @"9.预备知识：归并两个已排序数组",
         @"10.预备知识：归并排序实现",
+        @"11.例4：逆序数",
     ];
     NSArray *tempClassNameArray2 = @[
         @"sec2demo1",
@@ -81,8 +83,26 @@
         @"sec2demo8",
         @"sec2demo9",
         @"sec2demo10",
+        @"sec2demo11",
     ];
     [self addSectionDataWithClassNameArray:tempClassNameArray2 titleArray:tempTitleArray2 title:@"递归、回溯与分治"];
+}
+
+//MARK: 11.例4：逆序数
+- (void)sec2demo11 {
+    int test[] = {5,-7,9,1,3,5,-2,1};
+    std::vector<int> nums;
+    for (int i = 0; i < 8; i++) {
+        nums.push_back(test[i]);
+    }
+    
+    Solution315 solve;
+    std::vector<int> result = solve.countSmaller(nums);
+    printf("[");
+    for (int i = 0; i < result.size(); i++) {
+        printf("%d,", result[i]);
+    }
+    printf("]\n");
 }
 
 //MARK: 10.预备知识：归并排序实现
@@ -91,9 +111,6 @@
     Prepare315 solve;
     solve.sec2demo10();
     solve.sec2demo10_2();
-    
-    
-    
 }
 
 //MARK: 9.预备知识：归并两个已排序数组
