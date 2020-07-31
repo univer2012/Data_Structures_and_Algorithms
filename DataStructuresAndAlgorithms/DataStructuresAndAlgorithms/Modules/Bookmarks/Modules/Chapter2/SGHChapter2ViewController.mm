@@ -36,7 +36,7 @@
     NSArray *tempClassNameArray = @[
         @"demo1",
     ];
-    [self addSectionDataWithClassNameArray:tempClassNameArray titleArray:tempTitleArray title:@"第二章"];
+    [self addSectionDataWithClassNameArray:tempClassNameArray titleArray:tempTitleArray title:@"《数据结构(C++版)(第2版)》王红梅/胡明/王涛 编著--源代码 第二章"];
         
 }
 
