@@ -47,5 +47,29 @@ class PrePareBinaryTree2 {
 };
 
 
+/*
+ 预备知识：二叉树的深度遍历
+ 
+ void traversal(TreeNode *node) {
+    if (!node) {
+        return;
+    }
+    //此时访问node称为前序遍历
+    traversal(node->left);
+    //此时访问node称为中序遍历
+    traversal(node->right);
+    //测试访问node称为后续遍历
+ }
+ 
+        a(1)
+       /   \
+     b(2)   c(5)
+     /  \      \
+  d(3)  e(4)   f(6)
+ 前序遍历：a(1),b(2),d(3),e(4),c(5),f(6)
+ 中序遍历：d(3),b(2),e(4),a(1),c(5),f(6)
+ 后续遍历：d(3),e(4),b(2),f(6),c(5),a(1)
+ */
+
 #endif /* PrePareBinaryTree_hpp */
 

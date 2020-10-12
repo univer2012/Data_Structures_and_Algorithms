@@ -61,7 +61,7 @@ void Prepare78::sec2demo1() {
 void Prepare78::generate(int i, std::vector<int> &nums,
               std::vector<int> &item,
               std::vector<std::vector<int>> &result) {
-    if (i >= nums.size()) {
+    if (i >= nums.size()) { //递归结束条件，当i下标超过nums数组长度时结束，递归结束
         return;
     }
     item.push_back(nums[i]);
