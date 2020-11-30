@@ -9,9 +9,9 @@
 #include "LeetCode113.hpp"
 
 std::vector<std::vector<int>> Solution113::pathSum(TreeNode * root, int sum) {
-    std::vector<std::vector<int>> result;
-    std::vector<int> path;
-    int path_value = 0;
+    std::vector<std::vector<int>> result;   //结果，是矢量，因为可能有多条路径
+    std::vector<int> path;      //路径，是矢量
+    int path_value = 0;         //路径的累加值
     preorder(root, path_value, sum, path, result);
     return result;
 }
