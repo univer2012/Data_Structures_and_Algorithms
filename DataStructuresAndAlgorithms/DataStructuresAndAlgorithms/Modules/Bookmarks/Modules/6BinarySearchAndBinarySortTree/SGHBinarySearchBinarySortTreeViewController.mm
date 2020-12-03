@@ -12,6 +12,9 @@
 #include <vector>
 #include "LeetCode35.hpp"
 #include "LeetCode34.hpp"
+#include "LeetCode33.hpp"
+
+#include "BinarySearchTree.hpp"
 
 @interface SGHBinarySearchBinarySortTreeViewController ()
 
@@ -28,13 +31,44 @@
         @"1.预备知识：二分查找基础知识",
         @"例1：插入位置",
         @"例2：区间查找",
+        @"例3：旋转数组查找",
+        @"预备知识：二叉查找树插入节点",
+        @"预备知识：二叉查找树查找数值",
     ];
     NSArray *tempClassNameArray = @[
         @"sec1demo1",
         @"sec1demo2",
         @"sec1demo3",
+        @"sec1demo4",
+        @"sec1demo5",
+        @"sec1demo6",
     ];
     [self addSectionDataWithClassNameArray:tempClassNameArray titleArray:tempTitleArray title:@"二分查找与二叉查找树"];
+}
+
+//MARK:预备知识：二叉查找树查找数值
+- (void)sec1demo6 {
+    PrepareBinarySearchTree solve;
+    solve.test_insert();
+}
+
+//MARK:预备知识：二叉查找树插入节点
+- (void)sec1demo5 {
+    PrepareBinarySearchTree solve;
+    solve.test_insert();
+}
+
+//MARK: 例3：旋转数组查找
+- (void)sec1demo4 {
+    int test[] = {9, 12, 15, 20, 1, 3, 6, 7};
+    std::vector<int> nums;
+    Solution33 solve;
+    for (int i = 0; i < 8; i++) {
+        nums.push_back(test[i]);
+    }
+    for (int i = 0; i < 22; i++) {
+        printf("%d : %d\n", i, solve.search(nums, i));
+    }
 }
 
 //MARK: 例2：区间查找
